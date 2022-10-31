@@ -10,6 +10,7 @@ class UsersController < ApplicationController
                                                   :email, :weight, :height, :age, :sex))
     if @user.save
       flash[:notice] = "Registered successfully!"
+      session[:user_uid] = @user.uid
       redirect_to welcome_new_index_path
     else
       flash[:notice] = "Register failed!"

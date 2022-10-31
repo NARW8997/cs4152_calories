@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
     @user = User.find_by(username: params[:username], password: params[:password])
     if @user
       session[:user_uid] = @user.uid
-      session[:user_first_name] = @user.first_name
+      # session[:user_first_name] = @user.first_name
       flash[:notice] = "Login successfully!"
       redirect_to welcome_index_path
     else
@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_uid] = nil
-    session[:user_first_name] = nil
+    # session[:user_first_name] = nil
     flash[:notice] = "You have been Logout!"
     redirect_to root_path
   end

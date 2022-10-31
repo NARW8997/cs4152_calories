@@ -1,8 +1,113 @@
-<h1>Login Page</h1>
+<!--<h1>Login Page</h1>-->
 
-<%= form_tag sessions_path, method: "post" do %>
-  <p>username: <input type="text" name="username" title="username 6-12 chars"></p>
-  <p>password: <input type="text" name="password"></p>
-  <input type="submit" class = "btn btn-primary" value="login">
-  <%= link_to 'Register here', new_user_path, :class => 'btn btn-primary' %>
-<% end %>
+<%#= form_tag sessions_path, method: "post" do %>
+<!--  <p>username: <input type="text" name="username" title="username 6-12 chars"></p>-->
+<!--  <p>password: <input type="text" name="password"></p>-->
+<!--  <input type="submit" class = "btn btn-primary" value="login">-->
+  <%#= link_to 'Register here', new_user_path, :class => 'btn btn-primary' %>
+<%# end %>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalorieManager</title>
+  <style>
+      @font-face {
+          font-family: 'iconfont';  /* Project id 3741053 */
+          src: url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff2?t=1667235492068') format('woff2'),
+          url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff?t=1667235492068') format('woff'),
+          url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.ttf?t=1667235492068') format('truetype');
+      }
+      .iconfont{
+          font-family:"iconfont" !important;
+          font-size:16px;font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;}
+      body{
+          position:relative;
+      }
+      .abody{
+          position: absolute;
+          display: block;
+          height:600px;
+          width: 800px;
+          background-color: rgb(252, 255, 255);
+          text-align: center;
+          top: 120px;
+          left:50%;
+          /* margin-top: -300px; */
+          margin-left: -400px;
+
+      }
+      .atitle{
+          font-size:60px;
+          font-weight: 600;
+      }
+      .asubmit{
+          background-color:rgb(82, 41, 255);
+          width: 385px;
+          height: 40px;
+          color: rgb(222, 224, 200);
+          font-size: 20px;
+          margin-top:30px ;
+          border-radius:8px;
+          border-color:rgb(78, 72, 236)
+      }
+      .inputBox{
+          height: 35px;
+          width: 380px;
+          color: rgb(133, 130, 130);
+          border-radius:6px;
+          border: rgb(215, 216, 217) 1.5px solid;
+          outline-color: rgb(169, 176, 181);
+
+      }
+
+      .information{
+          text-align: left;
+          margin-left: 210px;
+          margin-bottom: 5px;
+          color: rgb(62, 63, 63);
+          font-size:18px;
+          font-weight:300px;
+          color: rgb(65, 66, 67);
+      }
+
+      .ee{
+          background-color: white;
+          border:white 1.5px solid;
+          margin-left:-50px ;
+          color:rgb(192, 194, 197);
+          font-size: 23px;
+          vertical-align:middle
+
+      }
+      ::placeholder{
+          color:rgb(192, 194, 197) ;
+      }
+  </style>
+
+</head>
+<body>
+<div class="abody">
+  <p class="atitle"><a>Calorie</a><a style="color:rgb(78, 72, 236) ;">Manager</a></p>
+  <br>
+  <p style="font-weight:500; margin-top: -50px;margin-bottom: 70px; color: darkgrey;">sign in now to get your Calorie managed!</p>
+  <%= form_tag sessions_path, method: "post" do %>
+    <p class="information">Username</p>
+    <div class="namebox"  >
+      <input type="text" class="inputBox" name="username">
+<!--      <button> class="iconfont ee" value="&#xe7e9;" ></button>-->
+    </div>
+    <p class="information">password</p>
+    <div class="passwordbox" style="height: 30px; ">
+      <input type="password" name="password" class="inputBox " >
+<!--      <button> class="iconfont ee" value="&#xebcd;" style="font-size:26px;"></button>-->
+    </div>
+    <br>
+    <input type="submit" style="margin-top: 50px;" value="sign in" class="asubmit" >
+    <p>don`<t></t> have an account?<%= link_to 'sign up', new_user_path, :style => "color:rgb(78, 72, 236) ;"%></p>
+  <% end %>
+</div>
+</body>

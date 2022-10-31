@@ -136,7 +136,6 @@ GEM
     nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    pg (1.4.4)
     popper_js (2.11.6)
     protobuf-cucumber (3.10.8)
       activesupport (>= 3.2)
@@ -260,7 +259,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  pg
   rails (= 4.2.11.3)
   rspec-rails (= 3.7.2)
   sass-rails (~> 5.0.3)

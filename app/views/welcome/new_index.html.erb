@@ -1,2 +1,3 @@
 <h1>New User Home Page</h1>
-<p>Welcome! New user: <%= session[:user_first_name] %></p>
+<p>Welcome! New user: <%= User.find(session[:user_uid]).first_name %></p>
+
