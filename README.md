@@ -27,6 +27,7 @@ $ bundle exec rake db:test:prepare
 
 4. Run test
 
+5. Run server with command: rails s -p {enter running port here}
 ```
 $ bundle exec rspec
 ```
