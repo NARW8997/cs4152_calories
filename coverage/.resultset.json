@@ -1,0 +1,23 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/codio/workspace/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/codio/workspace/app/controllers/application_controller.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/codio/workspace/app/models/user.rb": [
+        0,
+        0,
+        0
+      ]
+    },
+    "timestamp": 1667185111
+  }
+}
