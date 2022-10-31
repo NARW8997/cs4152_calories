@@ -1,0 +1,8 @@
+<h1>Login Page</h1>
+
+<%= form_tag sessions_path, method: "post" do %>
+  <p>username: <input type="text" name="username" title="username 6-12 chars"></p>
+  <p>password: <input type="text" name="password"></p>
+  <input type="submit" class = "btn btn-primary" value="login">
+  <%= link_to 'Register here', new_user_path, :class => 'btn btn-primary' %>
+<% end %>

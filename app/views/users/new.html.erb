@@ -1,0 +1,42 @@
+<h1>User Register</h1>
+
+<%=form_for @user, url: users_path, method: :post do |f| %>
+  <div class="mb-3">
+<!--    <label for="exampleInputEmail1" class="form-label">Username</label>-->
+<!--    <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="usernameHelp">-->
+    <%= label :user, :username, 'Username', :class => 'form-label' %>
+    <%= text_field :user, :username, :class => 'form-control' %>
+  </div>
+  <ul class = "list-unstyled">
+    <% @user.errors.messages.values.flatten.each do |error| %>
+      <li><i class="fade"></i><% error %></li>
+    <% end -%>
+  </ul>
+  <div class="mb-3">
+<!--    <label for="exampleInputPassword1" class="form-label">Password</label>-->
+<!--    <input type="password" class="form-control" id="exampleInputPassword1">-->
+    <%= label :user, :password, 'Password', :class => 'form-label' %>
+    <%= text_field :user, :password, :class => 'form-control' %>
+  </div>
+  <div class="mb-3 form-check">
+<!--    <label for="emailInput" class="form-label">Email</label>-->
+<!--    <input type="email" class="form-control" id="emailInput">-->
+    <%= label :user, :email, 'Email', :class => 'form-label' %>
+    <%= text_field :user, :email, :class => 'form-control' %>
+    <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3 form-check">
+<!--    <label for="first_name_input" class="form-label">First Name</label>-->
+<!--    <input type="first_name" class="form-control" id="first_name_input">-->
+    <%= label :user, :first_name, 'First Name', :class => 'form-label' %>
+    <%= text_field :user, :first_name, :class => 'form-control' %>
+  </div>
+  <div class="mb-3 form-check">
+<!--    <label for="last_name_input" class="form-label">Last Name</label>-->
+<!--    <input type="last_name" class="form-control" id="last_name_input">-->
+    <%= label :user, :last_name, 'Last Name', :class => 'form-label' %>
+    <%= text_field :user, :last_name, :class => 'form-control' %>
+  </div>
+  <%= f.submit "register", class: "btn btn-primary" %>
+  <%= link_to "Back to Login Page", new_session_path, class: "btn btn-primary" %>
+<% end -%>
