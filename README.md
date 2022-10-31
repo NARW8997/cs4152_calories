@@ -28,5 +28,5 @@ $ bundle exec rake db:test:prepare
 4. Run test
 
 ```
-$ rake spec
+$ bundle exec rspec
 ```
