@@ -11,7 +11,9 @@ Ruby version : 2.6.6
 Rails : 4.2.11.3
 
 1. Clone repository
-
+```
+$ git clone https://github.com/NARW8997/cs4152_calories.git
+```
 2. Install Gems
 
 ```
@@ -26,8 +28,10 @@ $ bundle exec rake db:test:prepare
 ```
 
 4. Run test
-
-5. Run server with command: rails s -p {enter running port here}
 ```
 $ bundle exec rspec
+```
+5. Run server with command:
+```
+$ rails s -p {enter running port here}
 ```
