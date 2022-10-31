@@ -31,7 +31,7 @@ $ bundle exec rake db:test:prepare
 ```
 $ bundle exec rspec
 ```
-5. Run server with command:
+5. Run server with command
 ```
 $ rails s -p {enter running port here}
 ```
