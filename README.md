@@ -30,6 +30,7 @@ $ bundle exec rake db:test:prepare
 4. Run test
 ```
 $ bundle exec rspec
+$ bundle exec cucumber
 ```
 5. Run server with command
 ```
