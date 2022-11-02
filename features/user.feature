@@ -26,9 +26,9 @@ Feature: display users information
     And I press "sign in"
     Then I should be on "home page"
     Then "Zac" with password "1234567" should not login
-    When I Press "register"
+    When I follow "sign up"
     Then I should be on "register page"
-    When I fill in "username" with "Zac"
+    #When I fill in "username" with "Zac"
     And I fill in "password" with "1234567"
     And I fill in "lastname" with "Zhang"
     And I fill in "firstname" with "Hua"
@@ -49,7 +49,7 @@ Feature: display users information
   Scenario: Existing user login
     Given I am on home page
     And I fill in "username" with "InfinityAlpha" and "password" with "00000000"
-    When I press "login"
+    When I press "sign in"
     Then I should be on "main page"
     Then I should see all the information of "InfinityAlpha"
 
@@ -69,7 +69,7 @@ Feature: display users information
     Then I should be on the main page
     Then I should see "lastname" with "Wang"
 
-    Scenario: Delete a user
-      Given I am on the main page of "Zac"
-      When I press "Delete"
-      Then I should be on the CalorieManager home page
+  Scenario: Delete a user
+    Given I am on the main page of "Zac"
+    When I press "Delete"
+    Then I should be on the CalorieManager home page

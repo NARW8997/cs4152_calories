@@ -46,11 +46,18 @@ And(/^I press "([^"]*)"$/) do |button|
   click_button(button)
 end
 
-Then(/^I should be on "([^"]*)"$/) do |page_name|
-  current_path = URI.parse(current_url).path
-  assert_equal path_to(page_name), current_path
+When(/^I follow "([^"]*)"$/) do |link|
+  click_link(link)
 end
 
+Then (/^I should be on "([^"]*)"$/) do |page_name|
+  current_path = URI.parse(current_url).path
+  if current_path.respond_to? :should
+    current_path.should == path_to(page_name)
+  else
+    assert_equal path_to(page_name), current_path
+  end
+end
 Then(/^"([^"]*)" with password "([^"]*)" should not login$/) do |username, password|
   user = User.find_by(username: username, password: password)
   expect(user).to be_nil
