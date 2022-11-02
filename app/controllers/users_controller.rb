@@ -38,6 +38,7 @@ class UsersController < ApplicationController
     if @user.save
       flash[:notice] = "You have changed your profiles!"
       redirect_to welcome_index_path
+      return
     end
     render action: :edit
   end
