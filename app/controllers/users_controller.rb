@@ -8,7 +8,11 @@ class UsersController < ApplicationController
   def create
     @user = User.new(params.require(:user).permit(:username, :password, :first_name, :last_name,
                                                   :email, :weight, :height, :age, :sex))
-    if @user.save
+
+    if params[:user][:password] != params[:confirmPW][:confirmPW]
+      flash[:notice] = "Please make sure you confirm password match your password!"
+      render action: :new
+    elsif @user.save
       flash[:notice] = "Registered successfully!"
       session[:user_uid] = @user.uid
       redirect_to welcome_new_index_path
@@ -46,8 +50,6 @@ class UsersController < ApplicationController
       redirect_to root_path
       return
     end
-    # session[:user_uid] = nil
-    # flash[:notice] = "You have been Deleted your account!"
     flash[:notice] = "Ops, It looks like your deletion was failed!"
     redirect_to :back
   end

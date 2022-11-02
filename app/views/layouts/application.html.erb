@@ -7,7 +7,6 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <%# These classes come from the Bootstrap CSS framework. %>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
 <!--  <nav class="navbar navbar-light" style="background-color: #e3f2fd;">-->
     <div class="container-fluid">
@@ -18,29 +17,22 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
 <!--          <a class="nav-link active" aria-current="page" href="#">Home</a>-->
-          <%#= link_to 'Home', new_session_path, :class => 'nav-link active'%>
           <% if session[:user_uid] %>
-            <%#= link_to 'Welcome', new_session_path, :class => 'nav-link active'%>
-            <t class="nav-link active">Welcome!</t>
-            <%#= link_to 'Home', new_session_path, :class => 'nav-link active'%>
-            <%#= link_to "#{@user.first_name}, Logout", session_path(@user), method: 'delete', :class => 'nav-link' %>
-            <%= link_to "#{User.find(session[:user_uid]).first_name}, Logout", session_path(session[:user_uid]), method: 'delete', :class => 'nav-link' %>
+            <%= link_to "Home", welcome_index_path, method: 'get', :class => 'nav-link' %>
             <%= link_to "Edit", edit_user_path(session[:user_uid]), method: 'get', :class => 'nav-link' %>
             <%= link_to "Delete", user_path(session[:user_uid]), method: 'delete', :class => 'nav-link text-danger' %>
+            <t class="nav-link active">Welcome!</t>
+            <%= link_to "#{User.find(session[:user_uid]).first_name}, Logout", session_path(session[:user_uid]), method: 'delete', :class => 'nav-link' %>
           <% else %>
             <%= link_to 'Home', new_session_path, :class => 'nav-link active'%>
             <%= link_to 'Login', new_session_path, :class => 'nav-link' %>
             <%= link_to 'Register', new_user_path, :class => 'nav-link' %>
           <% end -%>
-<!--          <a class="nav-link" href="#">Features</a>-->
-<!--          <a class="nav-link" href="#">Pricing</a>-->
-          <%#= link_to 'Register', new_user_path, :class => 'nav-link' %>
         </div>
       </div>
     </div>
   </nav>
   <div class="container">
-    <%# Render "flash" messages in our application. This loads _flash.erb %>
     <%= render 'layouts/flash' %>
     <main id="main">
       <%= yield %>
