@@ -1,42 +1,174 @@
-<h1>User Register</h1>
+<!--register page-->
 
-<%=form_for @user, url: users_path, method: :post do |f| %>
-  <div class="mb-3">
-<!--    <label for="exampleInputEmail1" class="form-label">Username</label>-->
-<!--    <input type="username" class="form-control" id="exampleInputEmail1" aria-describedby="usernameHelp">-->
-    <%= label :user, :username, 'Username', :class => 'form-label' %>
-    <%= text_field :user, :username, :class => 'form-control' %>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          text-decoration: none;
+      }
+      /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+      @font-face {
+          font-family: 'iconfont';  /* Project id 3741053 */
+          src: url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff2?t=1667235492068') format('woff2'),
+          url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff?t=1667235492068') format('woff'),
+          url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.ttf?t=1667235492068') format('truetype');
+      }
+      .iconfont{
+          font-family:"iconfont" !important;
+          font-size:16px;font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;}
+      body {
+          position: relative;
+          /* background-color: rgb(249, 250, 255); */
+          background-color: white;
+          color: rgb(64, 77, 85);
+      }
+      .box {
+          background-color: white;
+          height: calc(100vh - 100px);
+          /* width: 700px; */
+          padding-left:80px ;
+          margin-top: 20px;
+      }
+      input {
+          height: 35px;
+          width: 350px;
+          border: rgb(215, 216, 217) 1.5px solid;
+          margin:8px 0px 30px 0px;
+          outline-color: rgb(169, 176, 181);
+          color: rgb(64, 77, 85); ;
+      }
+      ::placeholder{
+          color: rgb(212, 213, 215);
+
+      }
+      .bigtitle {
+          font-size: 55px;
+          font-weight: 800;
+          border-bottom:2px dashed rgb(215, 216, 217);
+          margin-top: 25px;
+      }
+
+      #button {
+          color: white;
+          font-size: 18px;
+          background-color: rgb(69, 67, 226);
+          width: 120px;
+          height: 45px;
+          border: rgb(69, 67, 226) 1px solid;
+          float:right;
+          display: inline
+
+      }
+      .aimg img{
+          position: absolute;
+          /* height: 650px; */
+          width: 550px;
+          bottom:0px;
+          right: 10px;
+      }
+      .navlist li{
+          color: rgb(64, 77, 85);
+          float: left;
+          height: 100%;
+          line-height:35px;
+          text-align: center;
+          font-size: 18px;
+
+      }
+      .navlist a{
+          color: black;
+          display: block;
+      }
+      .navlist a:hover{
+          color:rgb(76, 74, 237);
+          /* background-color:rgb(244, 243, 249) ; */
+      }
+      .member{
+          height: 40px;
+          /* background-color: aqua; */
+      }
+      .member a{
+          color:rgb(69, 67, 226) ;
+      }
+      .member a:hover{
+          color: rgb(60, 61, 61);
+      }
+  </style>
+</head>
+
+<body>
+<div class="box" style="width:800px ;">
+
+  <div class="bigtitle">
+    <span  style="margin-bottom: -4px">Register <br></span>
+    <span >information</span>
   </div>
-  <ul class = "list-unstyled">
-    <% @user.errors.messages.values.flatten.each do |error| %>
-      <li><i class="fade"></i><% error %></li>
-    <% end -%>
-  </ul>
-  <div class="mb-3">
-<!--    <label for="exampleInputPassword1" class="form-label">Password</label>-->
-<!--    <input type="password" class="form-control" id="exampleInputPassword1">-->
-    <%= label :user, :password, 'Password', :class => 'form-label' %>
-    <%= text_field :user, :password, :class => 'form-control' %>
-  </div>
-  <div class="mb-3 form-check">
-<!--    <label for="emailInput" class="form-label">Email</label>-->
-<!--    <input type="email" class="form-control" id="emailInput">-->
-    <%= label :user, :email, 'Email', :class => 'form-label' %>
-    <%= text_field :user, :email, :class => 'form-control' %>
-    <div id="usernameHelp" class="form-text">We'll never share your email with anyone else.</div>
-  </div>
-  <div class="mb-3 form-check">
-<!--    <label for="first_name_input" class="form-label">First Name</label>-->
-<!--    <input type="first_name" class="form-control" id="first_name_input">-->
-    <%= label :user, :first_name, 'First Name', :class => 'form-label' %>
-    <%= text_field :user, :first_name, :class => 'form-control' %>
-  </div>
-  <div class="mb-3 form-check">
-<!--    <label for="last_name_input" class="form-label">Last Name</label>-->
-<!--    <input type="last_name" class="form-control" id="last_name_input">-->
-    <%= label :user, :last_name, 'Last Name', :class => 'form-label' %>
-    <%= text_field :user, :last_name, :class => 'form-control' %>
-  </div>
-  <%= f.submit "register", class: "btn btn-primary" %>
-  <%= link_to "Back to Login Page", new_session_path, class: "btn btn-primary" %>
-<% end -%>
+
+<!--  <form action="">-->
+  <%=form_for @user, url: users_path, method: :post do |f| %>
+
+    <div style="height: 250px;  border-bottom:2px dashed rgb(215, 216, 217);">
+      <!-- <form action=""> -->
+      <div style="float: left; display: inline; margin-top: 20px;">
+        <div>
+          <span class="input-box">Fist name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <%= text_field :user, :first_name %>
+        </div>
+        <div>
+          <span class="input-box">Username <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <%= text_field :user, :username %>
+        </div>
+      </div>
+
+      <div style=" float: right; display: inline; margin-top: 20px;">
+        <div>
+          <span class="input-box">Last name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <%= text_field :user, :last_name %>
+        </div>
+
+        <div>
+          <span class="input-box">Email <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <%= text_field :user, :email %>
+        </div>
+      </div>
+    </div>
+
+    <div style="height:120px; padding-top: 30px; border-bottom:2px dashed rgb(215, 216, 217);">
+      <div style="float: left;">
+        <span class="input-box">Password <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+<!--        <input type="text">-->
+        <%= text_field :user, :password %>
+      </div>
+      <div style="float: right; ">
+        <span class="input-box">Confirm password<a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+        <input type="text">
+        <%#= text_field :user, :confirmPW %>
+      </div>
+    </div>
+
+    <div style="height:20px; margin-top: 100px;" >
+<!--      <button>register</button>-->
+      <%#= f.submit "register", class: "btn btn-primary", id: "button" %>
+      <%= f.submit "register", id: "button" %>
+    </div>
+
+<!--  </form>-->
+  <% end -%>
+
+</div>
+
+<div class="aimg">
+<!--  <img src="../../../public/images/pic.jpg" alt="">-->
+  <img src="/assets/pic.jpg" alt="">
+</div>
+
+</body>

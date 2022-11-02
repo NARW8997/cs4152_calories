@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
   # get 'sessions/new'
-  #
+
+  #　ｕｓｅｒ　ａｌｒｅａｄｙ　ｈａｖｅ　ａ　ａｃｃｏｕｎｔ，　ｔｈｅｎ　ｌｏｇｉｎ
   get 'welcome/index'
+  post 'welcome/create'
+  # ＵＳＥＲ　ｆｉｒｓｔ　ｔｉｍｅ　ｌｏｇｉｎ　ｐａｇｅ
   get 'welcome/new_index'
+
+  # login page
   root 'sessions#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

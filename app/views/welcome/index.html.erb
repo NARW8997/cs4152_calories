@@ -1,3 +1,176 @@
-<h1>User Home Page</h1>
-<p>Welcome! <%= User.find(session[:user_uid]).first_name %></p>
+<!--<h1>User Home Page</h1>-->
+<!--<p>Welcome! <%#= User.find(session[:user_uid]).first_name %></p>-->
 <%#= link_to "#{@user.first_name}, Logout", session_path(@user), method: 'delete', :class => 'nav-link' %>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          text-decoration: none;
+      }
+      /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+      @font-face {
+          font-family: 'iconfont';  /* Project id 3741053 */
+          src: url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff2?t=1667235492068') format('woff2'),
+          url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff?t=1667235492068') format('woff'),
+          url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.ttf?t=1667235492068') format('truetype');
+      }
+      .iconfont{
+          font-family:"iconfont" !important;
+          font-size:16px;font-style:normal;
+          -webkit-font-smoothing: antialiased;
+          -webkit-text-stroke-width: 0.2px;
+          -moz-osx-font-smoothing: grayscale;}
+      html,body{
+          height: 100%;
+          background-color: rgb(244, 243, 249);
+      }
+      .dashboard{
+          background-color: white;
+          float: left;
+          width: 22%;
+          height:700px;
+          border-radius: 0 18px;
+          position: relative;
+      }
+      .content{
+          background-color:rgb(244, 243, 249);
+          float: right;
+          width: 77%;
+          height: 100%;
+          /* border-radius: 80px; */
+
+      }
+      .Navigation{
+          margin: 0px 40px;
+          background-color: white;
+          height: 5%;
+          border-radius: 10px;
+
+      }
+      .information{
+          background-color: white;
+          margin: 15px 40px;
+          height: 55%;
+          border-radius: 10px;
+
+      }
+      .information-aa{
+          background-color:white;
+          height: 100%;
+          width: 50%;
+          float: left;
+
+      }
+      .weight {
+          background-image: url(/assets/tu.png);
+          background-size: 300px;
+          background-repeat: no-repeat;
+          background-color:rgb(11, 11, 26) ;
+          float: right;
+          height: 308px;
+          width: 300px;
+          margin-top: 40px;
+      }
+      .ww{
+          background-color: white;
+          height: 90%;
+          width: 31.2%;
+          float: left;
+          /* margin-bottom:30%; */
+          border-radius: 10px;
+
+      }
+      .a-dashboard{
+          color:rgb(76, 74, 237);
+          font-size: 18px;
+          font-weight: 600;
+          background-color: rgb(227, 225, 255);
+          width: 250px;
+          height: 45px;
+          border: rgb(227, 225, 255) 1px solid;
+          border-radius: 8px;
+      }
+      .b-dashboard{
+          color:rgb(133, 135, 136);
+          font-size: 18px;
+          font-weight: 600;
+          background-color: white;
+          width: 250px;
+          height: 45px;
+          border: rgb(248, 247, 249) 1px solid;
+          border-radius: 8px;
+          margin-top: 130%;
+      }
+
+      .information-aa button{
+          color:rgb(76, 74, 237);
+          font-size: 18px;
+          font-weight: 600;
+          background-color:white;
+          width: 350px;
+          height: 45px;
+          border: rgb(149, 143, 225) 1px solid;
+          border-radius: 20px;
+      }
+      .ww p{
+          margin: 15px 15px;
+          color: rgb(159, 162, 164);
+
+      }
+      .ww h1{
+          text-align: center;
+          margin-top: 80px;
+      }
+
+  </style>
+</head>
+<body>
+<div class="dashboard">
+  <button class="a-dashboard" style="margin:10px 30px;"><i class="iconfont">&#xe653;</i>Dashboard</button>
+  <button class="b-dashboard"><span style="margin-right:15px;"> ← </span>Log Out</button>
+</div>
+
+<div class="content">
+  <div class="information">
+
+    <div class="information-aa" style="margin-left: 50px ;">
+      <p style="font-size:50px; font-weight:800;margin-top: 100px;  ">Hl,<%= User.find(session[:user_uid]).first_name %></p>
+      <p style="font-size:20px; font-weight:800; margin-top:40px ; color: rgb(100, 204, 155); ">-2.25kg</p>
+      <p style="font-size:15px; font-weight:500; margin-bottom: 40px; color: rgb(136, 140, 139); ">This Week</p>
+      <button>KEEP GOING!</button>
+    </div>
+
+    <div class="weight">
+      <h1 style="margin: 120px 120px 0 ; font-size:40px;color:white">70kg</h1>
+      <h1 style="font-size:10px; font-weight:400;margin-left: 125px;color: rgb(193, 205, 249);">YOUR WEIGHT</h1>
+    </div>
+
+  </div>
+
+  <div style="height: 40%;">
+
+    <div class="age ww">
+      <p>Age</p>
+      <h1>21</h1>
+    </div>
+
+    <div  class="sex ww" style="margin:0px 30px ;">
+      <p>Sex</p>
+      <h1>male</h1>
+    </div>
+
+    <div  class="hight ww">
+      <p>hight</p>
+      <h1>178cm</h1>
+    </div>
+
+  </div>
+</div>
+
+</body>

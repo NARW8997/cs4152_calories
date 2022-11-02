@@ -1,11 +1,4 @@
 <!--<h1>Login Page</h1>-->
-
-<%#= form_tag sessions_path, method: "post" do %>
-<!--  <p>username: <input type="text" name="username" title="username 6-12 chars"></p>-->
-<!--  <p>password: <input type="text" name="password"></p>-->
-<!--  <input type="submit" class = "btn btn-primary" value="login">-->
-  <%#= link_to 'Register here', new_user_path, :class => 'btn btn-primary' %>
-<%# end %>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -103,11 +96,11 @@
     <p class="information">password</p>
     <div class="passwordbox" style="height: 30px; ">
       <input type="password" name="password" class="inputBox " >
-<!--      <button> class="iconfont ee" value="&#xebcd;" style="font-size:26px;"></button>-->
+<!--      <button> class="iconfont ee" Yvalue="&#xebcd;" style="font-size:26px;"></button>-->
     </div>
     <br>
     <input type="submit" style="margin-top: 50px;" value="sign in" class="asubmit" >
-    <p>don`<t></t> have an account?<%= link_to 'sign up', new_user_path, :style => "color:rgb(78, 72, 236) ;"%></p>
+    <p>Do not have an account? <%= link_to 'sign up', new_user_path, :style => "color:rgb(78, 72, 236) ;"%></p>
   <% end %>
 </div>
 </body>

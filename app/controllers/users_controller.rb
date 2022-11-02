@@ -17,4 +17,39 @@ class UsersController < ApplicationController
       render action: :new
     end
   end
+
+  def edit
+    @user = User.find(session[:user_uid])
+  end
+
+  def update
+    @user = User.find_by(uid: session[:user_uid])
+    @user.first_name = params[:user][:first_name] unless (params[:user][:first_name].nil? or params[:user][:first_name].blank?)
+    @user.last_name = params[:user][:last_name] unless (params[:user][:last_name].nil? or params[:user][:last_name].blank?)
+    @user.first_name = params[:user][:email] unless (params[:user][:email].nil? or params[:user][:email].blank?)
+    @user.first_name = params[:user][:weight] unless (params[:user][:weight].nil? or params[:user][:weight].blank?)
+    @user.first_name = params[:user][:height] unless (params[:user][:height].nil? or params[:user][:height].blank?)
+    @user.first_name = params[:user][:age] unless (params[:user][:age].nil? or params[:user][:age].blank?)
+    @user.first_name = params[:user][:sex] unless (params[:user][:sex].nil? or params[:user][:sex].blank?)
+    if @user.save
+      flash[:notice] = "You have changed your profiles!"
+      redirect_to welcome_index_path
+    end
+    render action: :edit
+  end
+
+  def destroy
+    @user = User.find_by(uid: session[:user_uid])
+    if @user.destroy
+      session[:user_uid] = nil
+      flash[:notice] = "You have been Deleted your account!"
+      redirect_to root_path
+      return
+    end
+    # session[:user_uid] = nil
+    # flash[:notice] = "You have been Deleted your account!"
+    flash[:notice] = "Ops, It looks like your deletion was failed!"
+    redirect_to :back
+  end
+
 end
