@@ -12,7 +12,6 @@
           list-style: none;
           text-decoration: none;
       }
-      /* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
       @font-face {
           font-family: 'iconfont';  /* Project id 3741053 */
           src: url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff2?t=1667235492068') format('woff2'),
@@ -28,7 +27,11 @@
       body {
           position: relative;
           /* background-color: rgb(249, 250, 255); */
-          background-color: white;
+          /* background-color: white; */
+          background-image: url(/assets/pic.jpg);
+          background-repeat: no-repeat;
+          background-size: 580px;
+          background-position: bottom 0 right 0 ;
           color: rgb(64, 77, 85);
       }
       .box {
@@ -106,69 +109,63 @@
 </head>
 
 <body>
-<div class="box" style="width:800px ;">
+  <div class="box" style="width:800px ;">
 
-  <div class="bigtitle">
-    <span  style="margin-bottom: -4px">Register <br></span>
-    <span >information</span>
+    <div class="bigtitle">
+      <span  style="margin-bottom: -4px">Register <br></span>
+      <span >information</span>
+    </div>
+
+  <!--  <form action="">-->
+    <%=form_for @user, url: users_path, method: :post do |f| %>
+
+      <div style="height: 250px;  border-bottom:2px dashed rgb(215, 216, 217);">
+        <!-- <form action=""> -->
+        <div style="float: left; display: inline; margin-top: 20px;">
+          <div>
+            <span class="input-box">Fist name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+            <%= text_field :user, :first_name %>
+          </div>
+          <div>
+            <span class="input-box">Username <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+            <%= text_field :user, :username %>
+          </div>
+        </div>
+
+        <div style=" float: right; display: inline; margin-top: 20px;">
+          <div>
+            <span class="input-box">Last name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+            <%= text_field :user, :last_name %>
+          </div>
+
+          <div>
+            <span class="input-box">Email <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+            <%= text_field :user, :email %>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:120px; padding-top: 30px; border-bottom:2px dashed rgb(215, 216, 217);">
+        <div style="float: left;">
+          <span class="input-box">Password <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+  <!--        <input type="text">-->
+          <%= text_field :user, :password %>
+        </div>
+        <div style="float: right; ">
+          <span class="input-box">Confirm password<a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+  <!--        <input type="text">-->
+          <%= text_field :confirmPW, :confirmPW %>
+        </div>
+      </div>
+
+      <div style="height:20px; margin-top: 100px;" >
+  <!--      <button>register</button>-->
+        <%#= f.submit "register", class: "btn btn-primary", id: "button" %>
+        <%= f.submit "register", id: "button" %>
+      </div>
+
+  <!--  </form>-->
+    <% end -%>
   </div>
-
-<!--  <form action="">-->
-  <%=form_for @user, url: users_path, method: :post do |f| %>
-
-    <div style="height: 250px;  border-bottom:2px dashed rgb(215, 216, 217);">
-      <!-- <form action=""> -->
-      <div style="float: left; display: inline; margin-top: 20px;">
-        <div>
-          <span class="input-box">Fist name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-          <%= text_field :user, :first_name %>
-        </div>
-        <div>
-          <span class="input-box">Username <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-          <%= text_field :user, :username %>
-        </div>
-      </div>
-
-      <div style=" float: right; display: inline; margin-top: 20px;">
-        <div>
-          <span class="input-box">Last name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-          <%= text_field :user, :last_name %>
-        </div>
-
-        <div>
-          <span class="input-box">Email <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-          <%= text_field :user, :email %>
-        </div>
-      </div>
-    </div>
-
-    <div style="height:120px; padding-top: 30px; border-bottom:2px dashed rgb(215, 216, 217);">
-      <div style="float: left;">
-        <span class="input-box">Password <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-<!--        <input type="text">-->
-        <%= text_field :user, :password %>
-      </div>
-      <div style="float: right; ">
-        <span class="input-box">Confirm password<a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-<!--        <input type="text">-->
-        <%= text_field :confirmPW, :confirmPW %>
-      </div>
-    </div>
-
-    <div style="height:20px; margin-top: 100px;" >
-<!--      <button>register</button>-->
-      <%#= f.submit "register", class: "btn btn-primary", id: "button" %>
-      <%= f.submit "register", id: "button" %>
-    </div>
-
-<!--  </form>-->
-  <% end -%>
-
-</div>
-
-<div class="aimg">
-<!--  <img src="../../../public/images/pic.jpg" alt="">-->
-  <img src="/assets/pic.jpg" alt="">
-</div>
 
 </body>

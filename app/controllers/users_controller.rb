@@ -30,16 +30,17 @@ class UsersController < ApplicationController
     @user = User.find_by(uid: session[:user_uid])
     @user.first_name = params[:user][:first_name] unless (params[:user][:first_name].nil? or params[:user][:first_name].blank?)
     @user.last_name = params[:user][:last_name] unless (params[:user][:last_name].nil? or params[:user][:last_name].blank?)
-    @user.first_name = params[:user][:email] unless (params[:user][:email].nil? or params[:user][:email].blank?)
-    @user.first_name = params[:user][:weight] unless (params[:user][:weight].nil? or params[:user][:weight].blank?)
-    @user.first_name = params[:user][:height] unless (params[:user][:height].nil? or params[:user][:height].blank?)
-    @user.first_name = params[:user][:age] unless (params[:user][:age].nil? or params[:user][:age].blank?)
-    @user.first_name = params[:user][:sex] unless (params[:user][:sex].nil? or params[:user][:sex].blank?)
+    @user.email = params[:user][:email] unless (params[:user][:email].nil? or params[:user][:email].blank?)
+    @user.weight = params[:user][:weight] unless (params[:user][:weight].nil? or params[:user][:weight].blank?)
+    @user.height = params[:user][:height] unless (params[:user][:height].nil? or params[:user][:height].blank?)
+    @user.age = params[:user][:age] unless (params[:user][:age].nil? or params[:user][:age].blank?)
+    @user.sex = params[:user][:sex] unless (params[:user][:sex].nil? or params[:user][:sex].blank?)
     if @user.save
       flash[:notice] = "You have changed your profiles!"
       redirect_to welcome_index_path
       return
     end
+      flash[:notice] = "Update failed!"
     render action: :edit
   end
 
