@@ -46,14 +46,10 @@ class UsersController < ApplicationController
 
   def destroy
     @user = User.find_by(uid: session[:user_uid])
-    if @user.destroy
-      session[:user_uid] = nil
-      flash[:notice] = "You have been Deleted your account!"
-      redirect_to root_path
-      return
-    end
-    flash[:notice] = "Ops, It looks like your deletion was failed!"
-    redirect_to :back
+    @user.destroy
+    session[:user_uid] = nil
+    flash[:notice] = "You have been Deleted your account!"
+    redirect_to root_path
   end
 
 end
