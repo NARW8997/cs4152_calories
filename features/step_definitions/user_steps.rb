@@ -65,7 +65,8 @@ end
 
 
 Given(/^I am on User Input page$/) do
-  visit user_input_path
+  visit welcome_new_index_url
+
 end
 
 And(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
