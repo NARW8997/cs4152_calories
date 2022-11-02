@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-02T21:36:04+00:00">2022-11-02T21:36:04+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-02T23:49:04+00:00">2022-11-02T23:49:04+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -73,7 +73,7 @@
       <tr>
         <td class="strong"><a href="#48721ad5770fc64fb5258d7992f75e2a19d5fde8" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
         <td class="green strong">91.89 %</td>
-        <td>57</td>
+        <td>55</td>
         <td>37</td>
         <td>34</td>
         <td>3</td>
@@ -201,7 +201,7 @@
       <tr>
         <td class="strong"><a href="#48721ad5770fc64fb5258d7992f75e2a19d5fde8" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
         <td class="green strong">91.89 %</td>
-        <td>57</td>
+        <td>55</td>
         <td>37</td>
         <td>34</td>
         <td>3</td>
@@ -1045,52 +1045,40 @@
         <li class="covered" data-hits="2" data-linenumber="49">
           <span class="hits">2</span>
           
-          <code class="ruby">    if @user.destroy</code>
+          <code class="ruby">    @user.destroy</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="50">
           <span class="hits">2</span>
           
-          <code class="ruby">      session[:user_uid] = nil</code>
+          <code class="ruby">    session[:user_uid] = nil</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="51">
           <span class="hits">2</span>
           
-          <code class="ruby">      flash[:notice] = &quot;You have been Deleted your account!&quot;</code>
+          <code class="ruby">    flash[:notice] = &quot;You have been Deleted your account!&quot;</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="52">
           <span class="hits">2</span>
           
-          <code class="ruby">      redirect_to root_path</code>
+          <code class="ruby">    redirect_to root_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">      return</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="55">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">end</code>

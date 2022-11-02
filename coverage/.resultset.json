@@ -133,8 +133,6 @@
         2,
         null,
         null,
-        null,
-        null,
         null
       ],
       "/home/codio/workspace/app/controllers/welcome_controller.rb": [
@@ -168,6 +166,6 @@
         null
       ]
     },
-    "timestamp": 1667424964
+    "timestamp": 1667432944
   }
 }
