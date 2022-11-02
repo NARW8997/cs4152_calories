@@ -52,8 +52,6 @@ class UsersController < ApplicationController
       redirect_to root_path
       return
     end
-    flash[:notice] = "Ops, It looks like your deletion was failed!"
-    redirect_to :back
   end
 
 end

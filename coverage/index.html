@@ -5,7 +5,7 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <script src='./assets/0.10.2/application.js' type='text/javascript'></script>    
     <link href='./assets/0.10.2/application.css' media='screen, projection, print' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_red.png" />
+    <link rel="shortcut icon" type="image/png" href="./assets/0.10.2/favicon_yellow.png" />
     <link rel="icon" type="image/png" href="./assets/0.10.2/favicon.png" />
   </head>
   
@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-02T21:28:02+00:00">2022-11-02T21:28:02+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-02T21:36:04+00:00">2022-11-02T21:36:04+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">79.55%</span></span>
+    (<span class="covered_percent"><span class="yellow">80.23%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.47
+         1.62
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>9</b> files in total.
-    <b>88</b> relevant lines. 
-    <span class="green"><b>70</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <b>86</b> relevant lines. 
+    <span class="green"><b>69</b> lines covered</span> and
+    <span class="red"><b>17</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -72,12 +72,12 @@
       
       <tr>
         <td class="strong"><a href="#48721ad5770fc64fb5258d7992f75e2a19d5fde8" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="yellow strong">89.74 %</td>
-        <td>58</td>
-        <td>39</td>
-        <td>35</td>
-        <td>4</td>
-        <td>2.4</td>
+        <td class="green strong">91.89 %</td>
+        <td>57</td>
+        <td>37</td>
+        <td>34</td>
+        <td>3</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -149,20 +149,20 @@
           <div class="file_list_container" id="Controllers">
   <h2>
     <span class="group_name">Controllers</span>
-    (<span class="covered_percent"><span class="red">76.0%</span></span>
+    (<span class="covered_percent"><span class="red">76.71%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.55
+         1.73
        </span>
     </span> hits/line)
   </h2>
   <a name="Controllers"></a>
   <div>
     <b>4</b> files in total.
-    <b>75</b> relevant lines. 
-    <span class="green"><b>57</b> lines covered</span> and
-    <span class="red"><b>18</b> lines missed </span>
+    <b>73</b> relevant lines. 
+    <span class="green"><b>56</b> lines covered</span> and
+    <span class="red"><b>17</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -200,12 +200,12 @@
       
       <tr>
         <td class="strong"><a href="#48721ad5770fc64fb5258d7992f75e2a19d5fde8" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
-        <td class="yellow strong">89.74 %</td>
-        <td>58</td>
-        <td>39</td>
-        <td>35</td>
-        <td>4</td>
-        <td>2.4</td>
+        <td class="green strong">91.89 %</td>
+        <td>57</td>
+        <td>37</td>
+        <td>34</td>
+        <td>3</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -743,11 +743,11 @@
         <div class="source_table" id="48721ad5770fc64fb5258d7992f75e2a19d5fde8">
   <div class="header">
     <h3>app/controllers/users_controller.rb</h3>
-    <h4><span class="yellow">89.74 %</span> covered</h4>
+    <h4><span class="green">91.89 %</span> covered</h4>
     <div>
-      <b>39</b> relevant lines. 
-      <span class="green"><b>35</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <b>37</b> relevant lines. 
+      <span class="green"><b>34</b> lines covered</span> and
+      <span class="red"><b>3</b> lines missed.</span>
     </div>
   </div>
   
@@ -802,8 +802,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="9">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="9">
+          <span class="hits">14</span>
           
           <code class="ruby">    @user = User.new(params.require(:user).permit(:username, :password, :first_name, :last_name,</code>
         </li>
@@ -820,8 +820,8 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="13" data-linenumber="12">
-          <span class="hits">13</span>
+        <li class="covered" data-hits="14" data-linenumber="12">
+          <span class="hits">14</span>
           
           <code class="ruby">    if params[:user][:password] != params[:confirmPW][:confirmPW]</code>
         </li>
@@ -838,26 +838,26 @@
           <code class="ruby">      render action: :new</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="15">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="13" data-linenumber="15">
+          <span class="hits">13</span>
           
           <code class="ruby">    elsif @user.save</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="16">
+          <span class="hits">6</span>
           
           <code class="ruby">      flash[:notice] = &quot;Registered successfully!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="17">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="17">
+          <span class="hits">6</span>
           
           <code class="ruby">      session[:user_uid] = @user.uid</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="18">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="18">
+          <span class="hits">6</span>
           
           <code class="ruby">      redirect_to welcome_new_index_path</code>
         </li>
@@ -949,31 +949,31 @@
         <li class="covered" data-hits="1" data-linenumber="33">
           <span class="hits">1</span>
           
-          <code class="ruby">    @user.first_name = params[:user][:email] unless (params[:user][:email].nil? or params[:user][:email].blank?)</code>
+          <code class="ruby">    @user.email = params[:user][:email] unless (params[:user][:email].nil? or params[:user][:email].blank?)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="34">
           <span class="hits">1</span>
           
-          <code class="ruby">    @user.first_name = params[:user][:weight] unless (params[:user][:weight].nil? or params[:user][:weight].blank?)</code>
+          <code class="ruby">    @user.weight = params[:user][:weight] unless (params[:user][:weight].nil? or params[:user][:weight].blank?)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="35">
           <span class="hits">1</span>
           
-          <code class="ruby">    @user.first_name = params[:user][:height] unless (params[:user][:height].nil? or params[:user][:height].blank?)</code>
+          <code class="ruby">    @user.height = params[:user][:height] unless (params[:user][:height].nil? or params[:user][:height].blank?)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="36">
           <span class="hits">1</span>
           
-          <code class="ruby">    @user.first_name = params[:user][:age] unless (params[:user][:age].nil? or params[:user][:age].blank?)</code>
+          <code class="ruby">    @user.age = params[:user][:age] unless (params[:user][:age].nil? or params[:user][:age].blank?)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">    @user.first_name = params[:user][:sex] unless (params[:user][:sex].nil? or params[:user][:sex].blank?)</code>
+          <code class="ruby">    @user.sex = params[:user][:sex] unless (params[:user][:sex].nil? or params[:user][:sex].blank?)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="38">
@@ -1009,94 +1009,88 @@
         <li class="missed" data-hits="0" data-linenumber="43">
           
           
-          <code class="ruby">    render action: :edit</code>
+          <code class="ruby">      flash[:notice] = &quot;Update failed!&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="missed" data-hits="0" data-linenumber="44">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    render action: :edit</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="46">
           
-          <code class="ruby">  def destroy</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="47">
           <span class="hits">1</span>
           
+          <code class="ruby">  def destroy</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="48">
+          <span class="hits">2</span>
+          
           <code class="ruby">    @user = User.find_by(uid: session[:user_uid])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="49">
+          <span class="hits">2</span>
           
           <code class="ruby">    if @user.destroy</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="50">
+          <span class="hits">2</span>
           
           <code class="ruby">      session[:user_uid] = nil</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="50">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="51">
+          <span class="hits">2</span>
           
           <code class="ruby">      flash[:notice] = &quot;You have been Deleted your account!&quot;</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="52">
+          <span class="hits">2</span>
           
           <code class="ruby">      redirect_to root_path</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      return</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="53">
           
           
+          <code class="ruby">      return</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="54">
+          
+          
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
-          
-          <code class="ruby">    flash[:notice] = &quot;Ops, It looks like your deletion was failed!&quot;</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="55">
-          
-          
-          <code class="ruby">    redirect_to :back</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="57">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="57">
           
           
           <code class="ruby">end</code>
