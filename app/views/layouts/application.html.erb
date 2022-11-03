@@ -19,7 +19,7 @@
 <!--          <a class="nav-link active" aria-current="page" href="#">Home</a>-->
           <% if session[:user_uid] %>
             <%= link_to "Home", welcome_index_path, method: 'get', :class => 'nav-link' %>
-            <%= link_to "Edit", edit_user_path(session[:user_uid]), method: 'get', :class => 'nav-link', id:"Edit" %>
+            <%= link_to "Edit", edit_user_path(session[:user_uid]), method: 'get', :class => 'nav-link' %>
             <%= link_to "Delete", user_path(session[:user_uid]), method: 'delete', :class => 'nav-link text-danger' %>
             <t class="nav-link active">Welcome!</t>
             <%= link_to "#{User.find(session[:user_uid]).first_name}, Logout", session_path(session[:user_uid]), method: 'delete', :class => 'nav-link' %>

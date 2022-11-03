@@ -44,7 +44,7 @@ Feature: display users information
     And I fill in "user[height]" with "170"
     And I fill in "user[weight]" with "70"
     And I press "Add"
-    Then I should be on "main page"
+    Then I should be on "User Input page"
     Then I should see all the information of "Zac"
 
   Scenario: Existing user login
@@ -57,20 +57,20 @@ Feature: display users information
 
   Scenario: Update a user
     Given I am on the main page of "InfinityAlpha"
-    And I press "Edit"
+    And I follow "Edit"
     Then I should be on "edit page"
-    And I fill in "lastname" with "Wang"
-    And I fill in "firstname" with "Hua"
+    And I fill in "last_name" with "Wang"
+    And I fill in "first_name" with "Hua"
     And I fill in "sex" with "male"
-    And I fill in "Age" with "22"
+    And I fill in "age" with "22"
     And I fill in "height" with "170"
     And I fill in "weight" with "70"
     And I fill in "email" with "1253535@gmail.com"
     And I press "Update"
-    Then I should be on the main page
-    Then I should see "lastname" with "Wang"
+    Then I should be on "main page"
+    Then I should see last_name with "Wang" on the main page of "InfinityAlpha"
 
   Scenario: Delete a user
-    Given I am on the main page of "Zac"
-    When I press "Delete"
-    Then I should be on the CalorieManager home page
+    Given I am on the main page of "InfinityAlpha"
+    When I follow "Delete"
+    Then I should be on "root page"
