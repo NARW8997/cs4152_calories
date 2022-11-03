@@ -45,3 +45,6 @@ end
 gem 'sass-rails', '~> 5.0.3'
 gem 'uglifier', '>= 2.7.1'
 gem 'jquery-rails'
+
+gem 'factory_bot_rails'
+gem 'faker'

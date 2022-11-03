@@ -9,11 +9,19 @@ describe SessionsController, type: 'controller' do
     end
 
     context '#create' do
-        it "create a session" do 
+        it "create a session successfully" do 
             user = User.new(username: "test", password: "123456", first_name: "test", last_name: "test",
             email: "test@columbia.edu")
-            post :create, session: { email: user.email, password: user.password }
+            post :create, session: { username: user.username, password: user.password }
+            expect(User.where(username: user.username, password: user.password)).to exist
             expect(response).to redirect_to welcome_index_path
+        end
+
+        it "create a session unsuccessfully" do 
+            user = User.new(username: "test", password: "123456", first_name: "test", last_name: "test",
+            email: "test@columbia.edu")
+            post :create, session: { username: user.username, password: "234567" }
+            expect(response).to render_template("new")
         end
     end
 
