@@ -7,8 +7,8 @@ Feature: display users information
   Background: users have been added to database
      Given the following users exist:
       |uid| username               | password | first_name| last_name |email                  |weight|height|age|sex |
-      |1| InfinityAlpha          | 00000000 |  Xiao     |Li         |sjfoiwqjefopa@email.com|75    |180   |20 |male|
-      |2| InfinityAlpha1          | 00000001 |  Nan    |Liu         |feqwgwedfgasf@email.com|76    |182   |21 |male|
+      |1| InfinityAlpha          | 00000000 |  Xiao     |Li         |sjfoiwqjefopa@email.com|75    |180.0   |20 |male|
+      |2| InfinityAlpha1          | 00000001 |  Nan    |Liu         |feqwgwedfgasf@email.com|76    |182  |21 |male|
       |3| InfinityAlpha2          | 00000002 |  Fang     |Lin         |lflflflflflf@email.com|65   |170   |23 |female|
       |4| InfinityAlpha3          | 00000003 |  Hua     |Xiao         |hxhxhxhxhxhxh@email.com|85    |185   |22 |male|
       |5| InfinityAlpha4          | 00000004 |  Ma     |Wei         |mwmwmwmwmwmw@email.com|65    |166   |25 |female|
@@ -51,7 +51,7 @@ Feature: display users information
     Given I am on home page
     And I fill in "username" with "InfinityAlpha" and "password" with "00000000"
     When I press "sign in"
-    Then I should be on "main page"
+    Then I should be on "existing user main page"
     Then I should see all the information of "InfinityAlpha"
 
 

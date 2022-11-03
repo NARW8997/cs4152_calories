@@ -83,12 +83,11 @@ end
 
 Then(/^I should see all the information of "([^"]*)"$/) do |username|
   user = User.find_by(username: username)
-  step %{I should see "#{User.height}"}
-  step %{I should see "#{User.weight}"}
-  step %{I should see "#{User.sex}"}
-  step %{I should see "#{User.age}"}
+  step %{I should see "#{user.height}"}
+  step %{I should see "#{user.weight}"}
+  step %{I should see "#{user.sex}"}
+  step %{I should see "#{user.age}"}
 end
-
 
 
 Given(/^I am on the main page of "([^"]*)"$/) do |arg|
