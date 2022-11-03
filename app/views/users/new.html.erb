@@ -124,23 +124,23 @@
         <div style="float: left; display: inline; margin-top: 20px;">
           <div>
             <span class="input-box">Fist name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :first_name %>
+            <%= text_field :user, :first_name,id:"first_name"%>
           </div>
           <div>
             <span class="input-box">Username <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :username %>
+            <%= text_field :user, :username,id:"username" %>
           </div>
         </div>
 
         <div style=" float: right; display: inline; margin-top: 20px;">
           <div>
             <span class="input-box">Last name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :last_name %>
+            <%= text_field :user, :last_name, id:"last_name" %>
           </div>
 
           <div>
             <span class="input-box">Email <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :email %>
+            <%= text_field :user, :email,id:"email"%>
           </div>
         </div>
       </div>
@@ -149,12 +149,12 @@
         <div style="float: left;">
           <span class="input-box">Password <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
   <!--        <input type="text">-->
-          <%= text_field :user, :password %>
+          <%= text_field :user, :password,id:"password"%>
         </div>
         <div style="float: right; ">
           <span class="input-box">Confirm password<a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
   <!--        <input type="text">-->
-          <%= text_field :confirmPW, :confirmPW %>
+          <%= text_field :confirmPW, :confirmPW,id:"confirmPW"%>
         </div>
       </div>
 
@@ -168,4 +168,5 @@
     <% end -%>
   </div>
 
+</body>
 </body>
