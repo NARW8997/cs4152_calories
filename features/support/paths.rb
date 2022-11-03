@@ -15,8 +15,11 @@ module NavigationHelpers
       when /^home page$/ then '/sessions'
       when /^register page$/ then '/users/new'
       when /^User Input page/ then '/welcome/new_index'
-      when /^main page/ then '/welcome/new_index'
+      when /^main page/ then '/welcome/index'
       when /^existing user main page/ then '/welcome/index'
+      when /^edit page/ then '/users/1/edit'
+      when /^root page/ then '/'
+
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
       #

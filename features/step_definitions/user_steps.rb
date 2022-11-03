@@ -58,6 +58,7 @@ Then (/^I should be on "([^"]*)"$/) do |page_name|
     assert_equal path_to(page_name), current_path
   end
 end
+
 Then(/^"([^"]*)" with password "([^"]*)" should not login$/) do |username, password|
   user = User.find_by(username: username, password: password)
   expect(user).to be_nil
@@ -102,18 +103,8 @@ Then(/^I should be on the edit page$/) do
   pending
 end
 
-Then(/^I should see "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending
+Then(/^I should see last_name with "([^"]*)" on the main page of "([^"]*)"$/) do |arg1, arg2|
+  user = User.find_by(username: arg2)
+  user.last_name.should == arg1
 end
 
-Then(/^I should be on the CalorieManager home page$/) do
-  pending
-end
-
-And(/^I Press "([^"]*)"$/) do |arg|
-  pending
-end
-
-Then(/^I should be on the register page$/) do
-  pending
-end

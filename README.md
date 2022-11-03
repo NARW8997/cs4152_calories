@@ -8,7 +8,9 @@
 ## Build, Run, Test Instructions
 
 Ruby version : 2.6.6  
-Rails : 4.2.11.3
+Rails : 4.2.11.3 
+
+Prototype: https://www.figma.com/file/MG7PduQGmPU3M70djLBcXa/4152?node-id=9%3A83
 
 1. Clone repository
 ```
