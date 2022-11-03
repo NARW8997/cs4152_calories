@@ -3,11 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9948c253-83d7-40b9-9d9a-360b06a3b422" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/step_definitions/user_steps.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/step_definitions/user_steps.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/support/paths.rb" beforeDir="false" afterPath="$PROJECT_DIR$/features/support/paths.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/user.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/user.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +151,7 @@
       <workItem from="1667242310406" duration="11606000" />
       <workItem from="1667331188057" duration="29368000" />
       <workItem from="1667413236665" duration="3049000" />
-      <workItem from="1667418596947" duration="15104000" />
+      <workItem from="1667418596947" duration="15544000" />
     </task>
     <servers />
   </component>
