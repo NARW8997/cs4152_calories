@@ -1,6 +1,8 @@
 class SessionsController < ApplicationController
   def new
-
+    # if session[:user_uid]
+    session[:user_uid] = nil
+    # end
   end
 
   # login action, if login successfully, user's uid will be stored in session
