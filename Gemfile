@@ -34,6 +34,7 @@ group :test do
   gem 'cucumber-rails', :require => false
   gem 'cucumber-rails-training-wheels'
   gem 'simplecov', :require => false
+  gem 'factory_girl_rails'
 end
 # group :production do
 #   gem 'pg'
@@ -46,5 +47,5 @@ gem 'sass-rails', '~> 5.0.3'
 gem 'uglifier', '>= 2.7.1'
 gem 'jquery-rails'
 
-gem 'factory_bot_rails'
+# gem 'factory_bot_rails'
 gem 'faker'

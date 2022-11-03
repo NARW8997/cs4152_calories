@@ -1,23 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/codio/workspace/app/helpers/application_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/sessions_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/users_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/welcome_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/controllers/sessions_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -29,21 +29,21 @@
         1,
         2,
         2,
-        0,
+        1,
         null,
         null,
         null,
         null,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
         null,
-        0,
-        0,
+        1,
+        1,
         null,
-        2,
-        2,
+        1,
+        1,
         null,
         null,
         null,
@@ -55,14 +55,14 @@
         null,
         null
       ],
-      "/home/codio/workspace/app/controllers/application_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/codio/workspace/app/models/user.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/user.rb": [
         1,
         1,
         1,
@@ -80,7 +80,7 @@
         null,
         null
       ],
-      "/home/codio/workspace/app/controllers/users_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/home/codio/workspace/app/controllers/welcome_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/welcome_controller.rb": [
         1,
         1,
         null,
@@ -154,13 +154,13 @@
         1,
         1,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         0,
         0,
@@ -168,6 +168,6 @@
         null
       ]
     },
-    "timestamp": 1667442424
+    "timestamp": 1667447167
   }
 }
