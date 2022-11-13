@@ -1,29 +1,34 @@
 <!--register page-->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <style>
-      *{
+      * {
           margin: 0;
           padding: 0;
           list-style: none;
           text-decoration: none;
       }
+
       @font-face {
           font-family: 'iconfont';  /* Project id 3741053 */
           src: url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff2?t=1667235492068') format('woff2'),
           url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff?t=1667235492068') format('woff'),
           url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.ttf?t=1667235492068') format('truetype');
       }
-      .iconfont{
-          font-family:"iconfont" !important;
-          font-size:16px;font-style:normal;
+
+      .iconfont {
+          font-family: "iconfont" !important;
+          font-size: 16px;
+          font-style: normal;
           -webkit-font-smoothing: antialiased;
           -webkit-text-stroke-width: 0.2px;
-          -moz-osx-font-smoothing: grayscale;}
+          -moz-osx-font-smoothing: grayscale;
+      }
+
       body {
           position: relative;
           /* background-color: rgb(249, 250, 255); */
@@ -31,32 +36,36 @@
           background-image: url(/assets/pic.jpg);
           background-repeat: no-repeat;
           background-size: 580px;
-          background-position: bottom 0 right 0 ;
+          background-position: bottom 0 right 0;
           color: rgb(64, 77, 85);
       }
+
       .box {
           background-color: white;
           height: calc(100vh - 100px);
           /* width: 700px; */
-          padding-left:80px ;
+          padding-left: 80px;
           margin-top: 20px;
       }
+
       input {
           height: 35px;
           width: 350px;
           border: rgb(215, 216, 217) 1.5px solid;
-          margin:8px 0px 30px 0px;
+          margin: 8px 0px 30px 0px;
           outline-color: rgb(169, 176, 181);
-          color: rgb(64, 77, 85); ;
+          color: rgb(64, 77, 85);;
       }
-      ::placeholder{
+
+      ::placeholder {
           color: rgb(212, 213, 215);
 
       }
+
       .bigtitle {
           font-size: 55px;
           font-weight: 800;
-          border-bottom:2px dashed rgb(215, 216, 217);
+          border-bottom: 2px dashed rgb(215, 216, 217);
           margin-top: 25px;
       }
 
@@ -67,42 +76,49 @@
           width: 120px;
           height: 45px;
           border: rgb(69, 67, 226) 1px solid;
-          float:right;
+          float: right;
           display: inline
 
       }
-      .aimg img{
+
+      .aimg img {
           position: absolute;
           /* height: 650px; */
           width: 550px;
-          bottom:0px;
+          bottom: 0px;
           right: 10px;
       }
-      .navlist li{
+
+      .navlist li {
           color: rgb(64, 77, 85);
           float: left;
           height: 100%;
-          line-height:35px;
+          line-height: 35px;
           text-align: center;
           font-size: 18px;
 
       }
-      .navlist a{
+
+      .navlist a {
           color: black;
           display: block;
       }
-      .navlist a:hover{
-          color:rgb(76, 74, 237);
+
+      .navlist a:hover {
+          color: rgb(76, 74, 237);
           /* background-color:rgb(244, 243, 249) ; */
       }
-      .member{
+
+      .member {
           height: 40px;
           /* background-color: aqua; */
       }
-      .member a{
-          color:rgb(69, 67, 226) ;
+
+      .member a {
+          color: rgb(69, 67, 226);
       }
-      .member a:hover{
+
+      .member a:hover {
           color: rgb(60, 61, 61);
       }
   </style>
@@ -112,61 +128,63 @@
   <div class="box" style="width:800px ;">
 
     <div class="bigtitle">
-      <span  style="margin-bottom: -4px">Register <br></span>
-      <span >information</span>
+      <span style="margin-bottom: -4px">Register <br></span>
+      <span>information</span>
     </div>
 
-  <!--  <form action="">-->
-    <%=form_for @user, url: users_path, method: :post do |f| %>
+    <!--  <form action="">-->
+    <%= form_for @user, url: users_path, method: :post do |f| %>
 
       <div style="height: 250px;  border-bottom:2px dashed rgb(215, 216, 217);">
         <!-- <form action=""> -->
         <div style="float: left; display: inline; margin-top: 20px;">
           <div>
-            <span class="input-box">Fist name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :first_name,id:"first_name"%>
+            <span class="input-box">Fist name <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="first name is required" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+            <%= text_field :user, :first_name, id: "first_name" %>
           </div>
           <div>
-            <span class="input-box">Username <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :username,id:"username" %>
+            <span class="input-box">Username <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="username is required" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+            <%= text_field :user, :username, id: "username" %>
           </div>
         </div>
 
         <div style=" float: right; display: inline; margin-top: 20px;">
           <div>
-            <span class="input-box">Last name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :last_name, id:"last_name" %>
+            <span class="input-box">Last name <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="last name is required" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+            <%= text_field :user, :last_name, id: "last_name" %>
           </div>
 
           <div>
-            <span class="input-box">Email <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-            <%= text_field :user, :email,id:"email"%>
+            <span class="input-box">Email <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="email is required" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+            <%= text_field :user, :email, id: "email" %>
           </div>
         </div>
       </div>
 
       <div style="height:120px; padding-top: 30px; border-bottom:2px dashed rgb(215, 216, 217);">
         <div style="float: left;">
-          <span class="input-box">Password <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-  <!--        <input type="text">-->
-          <%= text_field :user, :password,id:"password"%>
+          <span class="input-box">Password <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="your password should at least 6 chars long" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <!--        <input type="text">-->
+          <%= text_field :user, :password, id: "password" %>
         </div>
         <div style="float: right; ">
-          <span class="input-box">Confirm password<a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-  <!--        <input type="text">-->
-          <%= text_field :confirmPW, :confirmPW,id:"confirmPW"%>
+          <span class="input-box">Confirm password<button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="confirm password should be same as the password" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <!--        <input type="text">-->
+          <%= text_field :confirmPW, :confirmPW, id: "confirmPW" %>
         </div>
       </div>
 
-      <div style="height:20px; margin-top: 100px;" >
-  <!--      <button>register</button>-->
+      <div style="height:20px; margin-top: 100px;">
+        <!--      <button>register</button>-->
         <%#= f.submit "register", class: "btn btn-primary", id: "button" %>
         <%= f.submit "register", id: "button" %>
       </div>
 
-  <!--  </form>-->
+      <!--  </form>-->
     <% end -%>
   </div>
-
-</body>
+  <script>
+      [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+          .forEach(el => new bootstrap.Tooltip(el))
+  </script>
 </body>
