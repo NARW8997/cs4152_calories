@@ -10,20 +10,16 @@ describe SessionsController, type: 'controller' do
 
     context '#create' do
         it "create a session successfully" do 
-            # user = User.new(username: "test", password: "123456", first_name: "test", last_name: "test",
-            # email: "test@columbia.edu")
-            user1 =  FactoryGirl.create(:user, username: "test", password: "123456", first_name: "test", last_name: "test",
+            user =  FactoryGirl.create(:user, username: "test", password: "123456", first_name: "test", last_name: "test",
                                          email: "test@columbia.edu")
-            # user_params = FactoryGirl.attributes_for(:user)
-            post :create, { username: user1.username, password: user1.password }
+            post :create, { username: user.username, password: user.password }
             expect(response).to redirect_to welcome_index_path
-            expect(User.where(username:'zeqing', password: '222222')).to exist
         end
 
         it "create a session unsuccessfully" do 
-            user = User.new(username: "test", password: "123456", first_name: "test", last_name: "test",
-            email: "test@columbia.edu")
-            post :create, session: { username: user.username, password: "234567" }
+            user =  FactoryGirl.create(:user, username: "test", password: "123456", first_name: "test", last_name: "test",
+                                         email: "test@columbia.edu")
+            post :create, { username: user.username, password: "234567"  }
             expect(response).to render_template("new")
         end
     end

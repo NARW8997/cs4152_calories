@@ -5,10 +5,9 @@ describe WelcomeController, type: 'controller' do
         it "create a welcome page" do 
             # user = User.new(username: "test", password: "123456", first_name: "test", last_name: "test",
             # email: "test@columbia.edu")
-            user1 =  FactoryGirl.create(:user, uid:30, weight: 180, height: 180, age: 15, sex:'male', username: 'suibian')
-            session[:user_uid] = user1.uid
-            post :create, user: { weight: user1.height, height: user1.height, age: user1.age, sex: user1.sex }
-            expect(User.where(uid: "1")).to exist
+            user =  FactoryGirl.create(:user, uid:30, weight: 180, height: 180, age: 15, sex:'male', username: 'suibian')
+            session[:user_uid] = user.uid
+            post :create, user: { weight: user.height, height: user.height, age: user.age, sex: user.sex }
             expect(response).to render_template("index")
         end
     end

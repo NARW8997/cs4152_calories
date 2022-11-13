@@ -46,9 +46,17 @@ And(/^I press "([^"]*)"$/) do |button|
   click_button(button)
 end
 
-Then(/^I should be on "([^"]*)"$/) do |page_name|
+When(/^I follow "([^"]*)"$/) do |link|
+  click_link(link)
+end
+
+Then (/^I should be on "([^"]*)"$/) do |page_name|
   current_path = URI.parse(current_url).path
-  assert_equal path_to(page_name), current_path
+  if current_path.respond_to? :should
+    current_path.should == path_to(page_name)
+  else
+    assert_equal path_to(page_name), current_path
+  end
 end
 
 Then(/^"([^"]*)" with password "([^"]*)" should not login$/) do |username, password|
@@ -58,7 +66,8 @@ end
 
 
 Given(/^I am on User Input page$/) do
-  visit user_input_path
+  visit welcome_new_index_url
+
 end
 
 And(/^I fill in "([^"]*)" with "([^"]*)"$/) do |field, value|
@@ -75,34 +84,27 @@ end
 
 Then(/^I should see all the information of "([^"]*)"$/) do |username|
   user = User.find_by(username: username)
-  step %{I should see "#{User.height}"}
-  step %{I should see "#{User.weight}"}
-  step %{I should see "#{User.sex}"}
-  step %{I should see "#{User.age}"}
+  step %{I should see "#{user.height}"}
+  step %{I should see "#{user.weight}"}
+  step %{I should see "#{user.sex}"}
+  step %{I should see "#{user.age}"}
 end
 
 
-
 Given(/^I am on the main page of "([^"]*)"$/) do |arg|
-  pending
+  step %{I am on home page}
+  step %{I fill in "username" with "InfinityAlpha" and "password" with "00000000"}
+  step %{I press "sign in"}
+  step %{I should be on "existing user main page"}
+  user = User.find_by(username: arg)
 end
 
 Then(/^I should be on the edit page$/) do
   pending
 end
 
-Then(/^I should see "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
-  pending
+Then(/^I should see last_name with "([^"]*)" on the main page of "([^"]*)"$/) do |arg1, arg2|
+  user = User.find_by(username: arg2)
+  user.last_name.should == arg1
 end
 
-Then(/^I should be on the CalorieManager home page$/) do
-  pending
-end
-
-And(/^I Press "([^"]*)"$/) do |arg|
-  pending
-end
-
-Then(/^I should be on the register page$/) do
-  pending
-end
