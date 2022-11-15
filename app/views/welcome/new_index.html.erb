@@ -2,59 +2,67 @@
 <!--<p>Welcome! New user: <%#= User.find(session[:user_uid]).first_name %></p>-->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
   <style>
-      *{
+      * {
           margin: 0;
           padding: 0;
           list-style: none;
           text-decoration: none;
       }
+
       @font-face {
           font-family: 'iconfont';  /* Project id 3741053 */
           src: url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff2?t=1667235492068') format('woff2'),
           url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.woff?t=1667235492068') format('woff'),
           url('//at.alicdn.com/t/c/font_3741053_lf4z8drci5c.ttf?t=1667235492068') format('truetype');
       }
-      .iconfont{
-          font-family:"iconfont" !important;
-          font-size:16px;font-style:normal;
+
+      .iconfont {
+          font-family: "iconfont" !important;
+          font-size: 16px;
+          font-style: normal;
           -webkit-font-smoothing: antialiased;
           -webkit-text-stroke-width: 0.2px;
-          -moz-osx-font-smoothing: grayscale;}
+          -moz-osx-font-smoothing: grayscale;
+      }
+
       body {
           position: relative;
           /* background-color: rgb(249, 250, 255); */
           background-color: white;
           color: rgb(64, 77, 85);
       }
+
       .box {
           background-color: white;
           height: calc(100vh - 100px);
           /* width: 700px; */
-          padding-left:80px ;
+          padding-left: 80px;
           margin-top: 20px;
       }
+
       input {
           height: 35px;
           width: 350px;
           border: rgb(215, 216, 217) 1.5px solid;
-          margin:8px 0px 30px 0px;
+          margin: 8px 0px 30px 0px;
           outline-color: rgb(169, 176, 181);
-          color: rgb(64, 77, 85); ;
+          color: rgb(64, 77, 85);;
       }
-      ::placeholder{
+
+      ::placeholder {
           color: rgb(212, 213, 215);
 
       }
+
       .bigtitle {
           font-size: 65px;
           font-weight: 700;
-          border-bottom:2px dashed rgb(215, 216, 217);
-          margin-top: 65px;
+          border-bottom: 2px dashed rgb(215, 216, 217);
       }
 
       .button1 {
@@ -64,32 +72,36 @@
           width: 120px;
           height: 45px;
           border: rgb(69, 67, 226) 1px solid;
-          float:right;
+          float: right;
           display: inline
 
       }
-      .aimg img{
+
+      .aimg img {
           position: absolute;
           /* height: 650px; */
           width: 550px;
           bottom: 10px;
           right: 0px;
       }
-      .navlist li{
+
+      .navlist li {
           color: rgb(64, 77, 85);
           float: left;
           height: 100%;
-          line-height:35px;
+          line-height: 35px;
           text-align: center;
           font-size: 18px;
 
       }
-      .navlist a{
+
+      .navlist a {
           color: black;
           display: block;
       }
-      .navlist a:hover{
-          color:rgb(76, 74, 237);
+
+      .navlist a:hover {
+          color: rgb(76, 74, 237);
           /* background-color:rgb(244, 243, 249) ; */
       }
   </style>
@@ -98,49 +110,67 @@
 <!-- <script src="../bootstrap/jquery-3.5.1.min.js"></script>
 <script src="../bootstrap/js/bootstrap.min.js"></script> -->
 <div class="box" style="width:800px ;">
-<!--  <div>-->
-<!--    <p style="float:left; font-size: 24px; font-weight:700; margin-right:50px;">Calorie<span style="color: rgb(69, 67, 226);">Manager</span></p>-->
-<!--    <ul class="navlist" >-->
-<!--      <li><a href="#">Home</a></li>-->
-<!--      <li style="margin: 0 38px;"><a href="#">Wenshuo,logout</a></li>-->
-<!--      <li><a href="#">register</a></li>-->
-<!--    </ul>-->
-<!--  </div>-->
   <br>
   <div class="bigtitle">
     <span>Register Success!</span><br>
     <span style="font-size: 23px;margin-top:5px;">Let us learn more about you</span>
   </div>
 
-  <div style="height: 250px;  border-bottom:2px dashed rgb(215, 216, 217);">
-    <%=form_for @user, url: welcome_create_path, method: :post do |f| %>
+  <div style="height: 430px;  border-bottom:2px dashed rgb(215, 216, 217);">
+    <%= form_for @user, url: welcome_create_path, method: :post do |f| %>
       <div style="float: left; display: inline; margin-top: 20px;">
         <div>
-          <span class="input-box">Height <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Height <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your height" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :height %>
         </div>
         <div>
-          <span class="input-box">sex <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Sex <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your sex" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <%= text_field :user, :sex %>
+        </div>
+        <div>
+          <span class="input-box">Goal Weight <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="You desired weight is?" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :sex %>
         </div>
       </div>
       <div style=" float: right; display: inline; margin-top: 20px;">
         <div>
-          <span class="input-box">weight <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Weight <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your weight" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :weight %>
         </div>
         <div>
-          <span class="input-box">age <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Age <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your age" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :age %>
+        </div>
+        <div>
+          <span class="input-box">Days <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="You want the following days to achieve your goal" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <%= text_field :user, :sex %>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        You want to
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-4">
+          <select class="form-select">
+            <option selected>Open this select menu</option>
+            <option value="1">Increase weight</option>
+            <option value="2">Decrease weight</option>
+            <option value="3">Maintain weight</option>
+          </select>
         </div>
       </div>
       </div>
-      <div style="height:20px; margin-top: 100px;" >
+      <div style="height:20px">
         <%= f.submit "Add", class: "button1" %>
       </div>
     <% end -%>
-</div>
+    </div>
 <div class="aimg">
   <img src="/assets/pic.jpg" alt="">
 </div>
+<script>
+    [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+        .forEach(el => new bootstrap.Tooltip(el))
+</script>
 </body>
+

@@ -30,7 +30,7 @@
           /* background-color: white; */
           background-image: url(/assets/pic.jpg);
           background-repeat: no-repeat;
-          background-size: 580px;
+          background-size: 650px;
           background-position: bottom 0 right 0 ;
           color: rgb(64, 77, 85);
       }
@@ -102,53 +102,49 @@
 
 <!--  <form action="">-->
   <%=form_for @user, url: user_path, method: :put do |f| %>
-    <div style="height: 400px;  border-bottom:2px dashed rgb(215, 216, 217);">
+    <div style="height: 430px;  border-bottom:2px dashed rgb(215, 216, 217);">
       <div style="float: left; display: inline; margin-top: 20px;">
         <div>
-          <span class="input-box">First name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">First name <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your first name" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
 <!--          <input type="text" placeholder="wenshou">-->
           <%= text_field :user, :first_name, id:"first_name" %>
         </div>
 
         <div>
-          <span class="input-box">Sex<a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-<!--          <input type="text" placeholder="xxx">-->
+          <span class="input-box">Sex<button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your sex here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :sex, id:"sex"%>
         </div>
 
         <div>
-          <span class="input-box">Age <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-<!--          <input type="text" placeholder="xxx">-->
+          <span class="input-box">Age <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your age here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :age, id:"age"%>
         </div>
 
         <div>
-          <span class="input-box">Weight <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
-<!--          <input type="text" placeholder="xxx">-->
+          <span class="input-box">Weight <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your current weight here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :weight, id:"weight"%>
         </div>
       </div>
 
       <div style=" float: right; display: inline; margin-top: 20px;">
         <div>
-          <span class="input-box">Last name <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Last name <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your last name here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
 <!--          <input type="text" placeholder="xie">-->
           <%= text_field :user, :last_name, id:"last_name"%>
         </div>
 
         <div>
-          <span class="input-box">Email <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Email <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your email here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
 <!--          <input type="text" placeholder="wx2283@columbia.edu">-->
           <%= text_field :user, :email, id:"email" %>
         </div>
 
         <div>
-          <span class="input-box">Height <a href=""><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></a></span><br>
+          <span class="input-box">Height <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your height here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
 <!--          <input type="text" placeholder="xxx">-->
           <%= text_field :user, :height, id:"height" %>
         </div>
       </div>
-
     </div>
 
   <div style="height:20px; margin-top: 100px;" >
@@ -157,5 +153,8 @@
   </div>
   <% end -%>
 </div>
-
+<script>
+    [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+        .forEach(el => new bootstrap.Tooltip(el))
+</script>
 </body>
