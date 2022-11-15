@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/codio/workspace/app/models/user.rb": [
+      "/home/codio/workspace/cs4152_calories/app/models/user.rb": [
         1,
         1,
         1,
@@ -19,7 +19,7 @@
         null,
         null
       ],
-      "/home/codio/workspace/app/controllers/sessions_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -57,30 +57,30 @@
         null,
         null
       ],
-      "/home/codio/workspace/app/controllers/application_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/application_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/sessions_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/users_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/helpers/welcome_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/app/controllers/users_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/home/codio/workspace/app/controllers/welcome_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/welcome_controller.rb": [
         1,
         1,
         null,
@@ -168,6 +168,6 @@
         null
       ]
     },
-    "timestamp": 1667500771
+    "timestamp": 1668394896
   }
 }
