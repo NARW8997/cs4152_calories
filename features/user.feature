@@ -47,7 +47,7 @@ Feature: display users information
     And I fill in "user[expected_days]" with "30"
     And I fill in "user[expected_goal_type]" with "gain"
     And I press "Add"
-    Then I should be on "User Input page"
+    Then I should be on "main page"
     Then I should see all the information of "Zac"
 
   Scenario: Existing user login
@@ -81,5 +81,15 @@ Feature: display users information
     When I follow "Delete"
     Then I should be on "root page"
 
-  Scenario: View all available exercises 
+  Scenario: View all available exercises
+    Given I am on the main page of "InfinityAlpha"
+    When I follow "Exercises"
+    Then I should be on "exercise page"
+    Then I should see information of all exercises
+
+
+  Scenario: View meal plans
+    Given I am on the main page of "InfinityAlpha"
+    When I follow "meal_plans"
+    Then I should be on "meal plans page"
     
