@@ -12,5 +12,9 @@ class User < ActiveRecord::Base
   # validates :age, presence: { message: "age cannot be blank"}
   # validates :sex, presence: { message: "sex cannot be blank"}
 
+  def calculate
+    #@user = User.find_by(uid: session[:user_uid])
+    #baseCalorie
+  end
 
 end

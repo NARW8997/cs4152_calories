@@ -11,6 +11,10 @@ class CreateUsers < ActiveRecord::Migration
       t.decimal :height
       t.integer :age
       t.integer :sex
+      t.integer :goal_weight
+      t.integer :days
+      t.string :type
+
       t.timestamps null: false
     end
   end
