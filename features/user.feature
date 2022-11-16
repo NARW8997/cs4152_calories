@@ -57,6 +57,12 @@ Feature: display users information
     Then I should be on "existing user main page"
     Then I should see all the information of "InfinityAlpha"
 
+  #Sad path
+  Scenario: Incorrect password or username 
+    Given I am on home page
+    And I fill in "username" with "InfinityAlpha10" and "password" with "00000000"
+    Then I should see ""
+
 
   Scenario: Update a user
     Given I am on the main page of "InfinityAlpha"
