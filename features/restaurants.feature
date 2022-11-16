@@ -19,17 +19,17 @@ Feature: display restaurants information
     Then 10 seed users should exist  
 
     Given the following restaurants exist:
-      |id| name          | location | cal_type|
-      |1| DIG            |2884 Broadway |low|
-      |2| Atlas Kitchen  |258 W 109th St |medium|
-      |3| East Village Pizza |145 1st Ave |high|
-      |4| Junzi Kitchen  | 2896 Broadway |low|
-      |5| Sapps |2888 Broadway|low|
-      |6| JJ's Place | 511 W 114th St|high|
-      |7| Le Monde | 2885 Broadway|medium|
-      |8| The Tang|920 Amsterdam Ave|medium|
-      |9| Just Salad|56W 125th Street|low|
-      |10| Sweetgreen|2937 Broadway|low|
+      |id| name          | cal_type | location|
+      |1| DIG            |low |2884 Broadway|
+      |2| Atlas Kitchen  |medium |258 W 109th St |
+      |3| East Village Pizza |high|145 1st Ave |
+      |4| Junzi Kitchen  |low|2896 Broadway |
+      |5| Sapps |low|2888 Broadway|
+      |6| JJ's Place | high|511 W 114th St|
+      |7| Le Monde | medium|2885 Broadway|
+      |8| The Tang|medium|920 Amsterdam Ave|
+      |9| Just Salad|low|56W 125th Street|
+      |10| Sweetgreen|low|2937 Broadway|
 
     Then 10 seed restaurants should exist
 
@@ -37,7 +37,4 @@ Feature: display restaurants information
     Given I am on the main page of "InfinityAlpha"
     When I follow "Restaurant"
     Then I should be on "restaurants page"
-    Then I should see "Atlas Kitchen"
-    Then I should see "Le Monde"
-    Then I should see "The Tang"
-    Then I should not see "East Village Pizza"
+    Then I should not see "high"

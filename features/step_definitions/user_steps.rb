@@ -131,9 +131,27 @@ And(/^I select "([^"]*)" with "([^"]*)"$/) do |field, options|
 end
 
 Then(/^I should see information of all exercises$/) do
-  pending
+  step %{I should see "Weight Lifting: general"}
+  step %{I should see "Aerobics: water"}
+  step %{I should see "Stretching, Hatha Yoga"}
+  step %{I should see "Calisthenics: moderate"}
+  step %{I should see "Stair Step Machine: general"}
+  step %{I should see "Weight Lifting: vigorous"}
+  step %{I should see "Aerobics, Step: low impactr"}
+  step %{I should see "Aerobics: high impact"}
+  step %{I should see "Bicycling, Stationary: moderate"}
+  step %{I should see "Rowing, Stationary: moderate"}
+  step %{I should see "Calisthenics: vigorous"}
+  step %{I should see "Circuit Training: general"}
+  step %{I should see "Rowing, Stationary: vigorous"}
+  step %{I should see "Elliptical Trainer: general"}
+  step %{I should see "Ski Machine: general"}
 end
 
 Given(/^I am on main page$/) do
   visit welcome_index_path
+end
+
+Given(/^I am on register page$/) do
+  visit new_user_path
 end

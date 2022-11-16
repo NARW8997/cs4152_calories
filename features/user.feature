@@ -19,13 +19,28 @@ Feature: display users information
       |10| InfinityAlpha9          | 00000009 |  Chuan     |Qin         |qcqcqcqcqc@email.com|83    |183   |22 |male|75|60|Decrease weight|
 
     Then 10 seed users should exist
-
-  Scenario: New user login
+  #Sad Path:
+  Scenario: Not an exsiting user
     Given I am on home page
     When I fill in "username" with "Zac" and "password" with "1234567"
     And I press "sign in"
     Then I should be on "home page"
     Then "Zac" with password "1234567" should not login
+
+  #Sad path
+  Scenario: User's password and confirm password does not match 
+    Given I am on register page
+    When I fill in "first_name" with "Hua"
+    And I fill in "last_name" with "Zhang"
+    And I fill in "username" with "Zac"
+    And I fill in "email" with "1253535@gmail.com" 
+    And I fill in "password" with "123456"
+    And I fill in "confirmPW" with "123356"
+    And I press "register"
+    Then I should see "password does not match error message"
+
+  Scenario: New user login
+    Given I am on home page
     When I follow "sign up"
     Then I should be on "register page"
     When I fill in "first_name" with "Hua"
@@ -36,6 +51,7 @@ Feature: display users information
     And I fill in "confirmPW" with "1234567"
     And I press "register"
     Then I should be on "User Input page"
+
 
   #Scenario:  New user input
     #Given I am on User Input page
@@ -61,7 +77,7 @@ Feature: display users information
   Scenario: Incorrect password or username 
     Given I am on home page
     And I fill in "username" with "InfinityAlpha10" and "password" with "00000000"
-    Then I should see ""
+    Then I should see Username or Password incorrect! flash
 
 
   Scenario: Update a user
