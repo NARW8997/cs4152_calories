@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0274de36-8350-4f68-b9c6-e511f60278f6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/cs4152_calories.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cs4152_calories.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/0155a5f5-deff-4b28-8d09-b85cab5a221b.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/0155a5f5-deff-4b28-8d09-b85cab5a221b.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2f0dc2ae-9f77-49b8-9b10-ab84fc58d588.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2f0dc2ae-9f77-49b8-9b10-ab84fc58d588.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/restaurant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/restaurant.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +31,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/xws/Desktop/2022Fall/cs4152/iter1/cs4152_calories",
+    "last_opened_file_path": "/Users/xws/Desktop/2022Fall/cs4152/iter1/cs4152_calories/app/views/welcome",
     "nodejs_package_manager_path": "npm",
     "ruby.rails.projectView.checked": "true",
     "settings.editor.selected.configurable": "database.query.execution"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/welcome" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers" />
+      <recent name="$PROJECT_DIR$/app/views/welcome" />
+      <recent name="$PROJECT_DIR$/app/views/layouts" />
+    </key>
+  </component>
   <component name="RunManager" selected="Rails.Development: cs4152_calories">
     <configuration name="Development: cs4152_calories" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="cs4152_calories" />
