@@ -88,6 +88,7 @@ Then(/^I should see all the information of "([^"]*)"$/) do |username|
   step %{I should see "#{user.weight}"}
   step %{I should see "#{user.sex}"}
   step %{I should see "#{user.age}"}
+  step %{I should see "#{user.age}"}
 
 end
 

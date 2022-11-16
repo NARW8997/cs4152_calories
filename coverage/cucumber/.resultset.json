@@ -17,9 +17,16 @@
         null,
         null,
         1,
+        0,
         null,
+        0,
+        0,
+        0,
+        0,
         null,
+        0,
         null,
+        0,
         null,
         null
       ],
@@ -125,6 +132,7 @@
         0,
         0,
         0,
+        null,
         0,
         0,
         0,
@@ -147,6 +155,7 @@
       "/home/codio/workspace/cs4152_calories/app/controllers/welcome_controller.rb": [
         1,
         1,
+        5,
         null,
         null,
         null,
@@ -160,6 +169,7 @@
         null,
         null,
         1,
+        0,
         0,
         0,
         0,
@@ -179,6 +189,6 @@
         null
       ]
     },
-    "timestamp": 1668566633
+    "timestamp": 1668573567
   }
 }

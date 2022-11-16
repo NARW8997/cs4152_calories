@@ -45,7 +45,7 @@ Feature: display users information
     And I fill in "user[weight]" with "70"
     And I fill in "user[goal_weight]" with "73"
     And I fill in "user[days]" with "30"
-    And I select "user_type" with "Increase weight"
+    And I select "user[user_type]" with "Increase weight"
     And I press "Add"
     Then I should be on "User Input page"
     Then I should see all the information of "Zac"
