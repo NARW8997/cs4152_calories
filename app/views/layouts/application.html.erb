@@ -20,7 +20,7 @@
             <%= link_to "Home", welcome_index_path, method: 'get', :class => 'nav-link' %>
             <%= link_to "Edit", edit_user_path(session[:user_uid]), method: 'get', :class => 'nav-link' %>
             <%= link_to "Delete", user_path(session[:user_uid]), method: 'delete', :class => 'nav-link text-danger' %>
-            <%= link_to "Restaurant", welcome_restaurant_path, :class => 'nav-link' %>
+            <%= link_to "Restaurant", restaurants_restaurant_path, :class => 'nav-link' %>
             <%= link_to "Exercise", welcome_exercise_path, :class => 'nav-link' %>
             <%= link_to "Meal Plan", "https://www.trifectanutrition.com/meal-plan-delivery", :class => 'nav-link' %>
             <span class="nav-link active float-end" style="margin-left: 580px">
