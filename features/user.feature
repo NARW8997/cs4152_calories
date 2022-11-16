@@ -6,7 +6,7 @@ Feature: display users information
 
   Background: users have been added to database
      Given the following users exist:
-      |uid| username               | password | first_name| last_name |email                  |weight|height|age|sex |expected_weight|expected_days|expected_goal_type|
+      |uid| username               | password | first_name| last_name |email                  |weight|height|age|sex |goal_weight|days|user_type|
       |1| InfinityAlpha          | 00000000 |  Xiao     |Li         |sjfoiwqjefopa@email.com|75    |180.0   |20 |male|75| 30|maintain|
       |2| InfinityAlpha1          | 00000001 |  Nan    |Liu         |feqwgwedfgasf@email.com|76    |182  |21 |male| 76 |30|maintain|
       |3| InfinityAlpha2          | 00000002 |  Fang     |Lin         |lflflflflflf@email.com|65   |170   |23 |female|70|60|lose|
@@ -43,11 +43,11 @@ Feature: display users information
     And I fill in "user[age]" with "22"
     And I fill in "user[height]" with "170"
     And I fill in "user[weight]" with "70"
-    And I fill in "user[expected_weight]" with "73"
-    And I fill in "user[expected_days]" with "30"
-    And I fill in "user[expected_goal_type]" with "gain"
+    And I fill in "user[goal_weight]" with "73"
+    And I fill in "user[days]" with "30"
+    And I select "user_type" with "Increase weight"
     And I press "Add"
-    Then I should be on "main page"
+    Then I should be on "User Input page"
     Then I should see all the information of "Zac"
 
   Scenario: Existing user login
@@ -73,7 +73,7 @@ Feature: display users information
     And I fill in "expected_days" with "30"
     And I fill in "expected_goal_type" with "gain"
     And I press "Update"
-    Then I should be on "main page"
+    Then I should be on "User Input page"
     Then I should see last_name with "Wang" on the main page of "InfinityAlpha"
 
   Scenario: Delete a user

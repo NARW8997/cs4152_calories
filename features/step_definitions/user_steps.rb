@@ -32,7 +32,7 @@ Then(/^(\d+) seed users should exist$/) do |n_seeds|
   expect(User.count).to eq n_seeds.to_i
 end
 
-Given(/^I am on home   page$/) do
+Given(/^I am on home page$/) do
   visit root_path
 end
 
@@ -119,4 +119,8 @@ end
 
 Then(/^I should not see "([^"]*)"$/) do |arg|
   pending
+end
+
+And(/^I select "([^"]*)" with "([^"]*)"$/) do |field, options|
+  select(options, :from => field)
 end
