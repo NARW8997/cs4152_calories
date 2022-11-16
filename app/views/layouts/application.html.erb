@@ -16,13 +16,17 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-<!--          <a class="nav-link active" aria-current="page" href="#">Home</a>-->
           <% if session[:user_uid] %>
             <%= link_to "Home", welcome_index_path, method: 'get', :class => 'nav-link' %>
             <%= link_to "Edit", edit_user_path(session[:user_uid]), method: 'get', :class => 'nav-link' %>
             <%= link_to "Delete", user_path(session[:user_uid]), method: 'delete', :class => 'nav-link text-danger' %>
-            <t class="nav-link active">Welcome!</t>
-            <%= link_to "#{User.find(session[:user_uid]).first_name}, Logout", session_path(session[:user_uid]), method: 'delete', :class => 'nav-link' %>
+            <%= link_to "Restaurant", root_path, :class => 'nav-link' %>
+            <%= link_to "Exercise", root_path, :class => 'nav-link' %>
+            <%= link_to "Meal Plan", root_path, :class => 'nav-link' %>
+            <span class="nav-link active float-end" style="margin-left: 580px">
+              <t class="">Welcome!</t>
+                <%= link_to "#{User.find(session[:user_uid]).first_name}, Logout", session_path(session[:user_uid]), method: 'delete', :class => 'text-secondary' %>
+            </span>
           <% else %>
             <%= link_to 'Home', new_session_path, :class => 'nav-link active'%>
             <%= link_to 'Login', new_session_path, :class => 'nav-link' %>
