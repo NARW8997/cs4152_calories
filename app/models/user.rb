@@ -12,9 +12,16 @@ class User < ActiveRecord::Base
   # validates :age, presence: { message: "age cannot be blank"}
   # validates :sex, presence: { message: "sex cannot be blank"}
 
-  def calculate
-    #@user = User.find_by(uid: session[:user_uid])
-    #baseCalorie
+  def calculate(uid)
+    @user = User.find_by(uid)
+    # Increase the weight is 1, decrease is 2, maintain is 0.
+    if @user.user_type.eql?("1")
+      @user.daily_calorie = ((@user.goal_weight - @user.weight) * 7700) / @user.days
+    elsif @user.user_type.eql?("2")
+      @user.daily_calorie = -(((@user.weight - @user.goal_weight) * 7700) / @user.days)
+    else
+      @user.daily_calorie = 0
+    end
+    @user.save
   end
-
 end

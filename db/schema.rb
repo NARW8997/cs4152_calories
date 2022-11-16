@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20221116004624) do
+ActiveRecord::Schema.define(version: 20221116034452) do
+
+  create_table "restaurants", force: :cascade do |t|
+    t.string "name"
+    t.string "cal_type"
+    t.string "location"
+  end
 
   create_table "users", primary_key: "uid", force: :cascade do |t|
     t.string   "username"

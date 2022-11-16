@@ -163,9 +163,9 @@
               <p style="font-size:15px; font-weight:500; margin-bottom: 40px; color: rgb(136, 140, 139); ">This Week</p>
             </div>
             <div class="col-md-6" style="margin-top: 35px">
-              Need to burn <br>
-              <span class="text-danger">300</span> <br>
-              Calories Today
+               Today, you need <br>
+              <span class="text-danger"><%= User.find(session[:user_uid]).daily_calorie %> Calories</span> <br>
+               calorie deficit(-)/calorie surplus(+)
             </div>
           </div>
           <div class="row">
@@ -174,7 +174,7 @@
         </div>
 
         <div class="weight">
-          <span style="margin: 140px 0 0 290px; font-size:40px;color:white"><%= User.find(session[:user_uid]).weight %></span>
+          <span style="margin: 140px 0 0 290px; font-size:40px;color:white"><%= User.find(session[:user_uid]).weight %> KG</span>
           <div class="pic"></div>
         </div>
       </div>

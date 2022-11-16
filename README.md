@@ -25,6 +25,7 @@ $ bundle install --without production
 ```
 $ bundle exec rake db:migrate
 $ bundle exec rake db:test:prepare
+$ rake db:seed
 ```
 
 4. Run test
