@@ -5,8 +5,6 @@ class CreateRestaurant < ActiveRecord::Migration
       t.primary_key :id
       t.string :cal_type
       t.string :location
-
-      t.timestamps null: false
     end
   end
 end
