@@ -28,6 +28,13 @@ Given /the following users exist/ do |users_table|
   end
 end
 
+Given /the following restaurants exist/ do |restaurants_table|
+  restaurants_table.hashes.each do |restaurant|
+    # each returned element will be a hash whose key is the table header.
+    # you should arrange to add that user to the database here.
+    Restaurant.create(restaurant)
+  end
+end
 Then(/^(\d+) seed users should exist$/) do |n_seeds|
   expect(User.count).to eq n_seeds.to_i
 end
@@ -111,17 +118,22 @@ Then(/^I should see last_name with "([^"]*)" on the main page of "([^"]*)"$/) do
 end
 
 Then(/^(\d+) seed restaurants should exist$/) do |n_seeds|
-  pending
+  expect(Restaurant.count).to eq n_seeds.to_i
 end
 
-Then(/^I should see information of all restaurants$/) do
-  pending
-end
 
-Then(/^I should not see "([^"]*)"$/) do |arg|
-  pending
+Then(/^I should not see "([^"]*)"$/) do |text|
+  expect(page).not_to have_content(text)
 end
 
 And(/^I select "([^"]*)" with "([^"]*)"$/) do |field, options|
   select(options, :from => field)
+end
+
+Then(/^I should see information of all exercises$/) do
+  pending
+end
+
+Given(/^I am on main page$/) do
+  visit welcome_index_path
 end

@@ -19,6 +19,9 @@ module NavigationHelpers
       when /^existing user main page/ then '/welcome/index'
       when /^edit page/ then '/users/1/edit'
       when /^root page/ then '/'
+      when /^exercise page/ then '/'
+      when /^meal plans page/ then 'https://www.trifectanutrition.com/meal-plan-delivery'
+      when /^restaurants page/ then '/welcome/restaurant'
 
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:
