@@ -17,6 +17,13 @@
         1,
         null
       ],
+      "/home/codio/workspace/app/controllers/restaurants_controller.rb": [
+        1,
+        1,
+        0,
+        null,
+        null
+      ],
       "/home/codio/workspace/app/controllers/sessions_controller.rb": [
         1,
         1,
@@ -103,6 +110,10 @@
         1,
         1,
         1,
+        null,
+        1,
+        1,
+        1,
         1,
         null,
         0,
@@ -122,6 +133,8 @@
       "/home/codio/workspace/app/controllers/welcome_controller.rb": [
         1,
         1,
+        0,
+        null,
         null,
         null,
         null,
@@ -143,8 +156,19 @@
         1,
         1,
         1,
+        1,
+        1,
+        1,
+        1,
         null,
         0,
+        0,
+        null,
+        null
+      ],
+      "/home/codio/workspace/app/models/restaurant.rb": [
+        1,
+        1,
         0,
         null,
         null
@@ -164,10 +188,21 @@
         null,
         null,
         null,
+        1,
+        1,
+        null,
+        1,
+        0,
+        1,
+        0,
+        null,
+        1,
+        null,
+        1,
         null,
         null
       ]
     },
-    "timestamp": 1668535468
+    "timestamp": 1668621378
   }
 }
