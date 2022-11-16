@@ -32,7 +32,7 @@ Then(/^(\d+) seed users should exist$/) do |n_seeds|
   expect(User.count).to eq n_seeds.to_i
 end
 
-Given(/^I am on home page$/) do
+Given(/^I am on home   page$/) do
   visit root_path
 end
 
@@ -88,6 +88,7 @@ Then(/^I should see all the information of "([^"]*)"$/) do |username|
   step %{I should see "#{user.weight}"}
   step %{I should see "#{user.sex}"}
   step %{I should see "#{user.age}"}
+
 end
 
 
@@ -108,3 +109,14 @@ Then(/^I should see last_name with "([^"]*)" on the main page of "([^"]*)"$/) do
   user.last_name.should == arg1
 end
 
+Then(/^(\d+) seed restaurants should exist$/) do |n_seeds|
+  pending
+end
+
+Then(/^I should see information of all restaurants$/) do
+  pending
+end
+
+Then(/^I should not see "([^"]*)"$/) do |arg|
+  pending
+end

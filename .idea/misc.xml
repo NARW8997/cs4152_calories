@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectRootManager" version="2" project-jdk-name="Remote-rbenv: ruby-2.6.6-p146" project-jdk-type="RUBY_SDK" />
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectRootManager" version="2" project-jdk-name="rbenv: 2.6.6" project-jdk-type="RUBY_SDK" />
+>>>>>>> 6e5c4b0ef5238928f0201f4da24c68ddecdf4364
 </project>

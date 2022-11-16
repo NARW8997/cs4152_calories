@@ -35,6 +35,10 @@ class UsersController < ApplicationController
     @user.height = params[:user][:height] unless (params[:user][:height].nil? or params[:user][:height].blank?)
     @user.age = params[:user][:age] unless (params[:user][:age].nil? or params[:user][:age].blank?)
     @user.sex = params[:user][:sex] unless (params[:user][:sex].nil? or params[:user][:sex].blank?)
+    @user.goal_weight = params[:user][:goal_weight] unless (params[:user][:goal_weight].nil? or params[:user][:goal_weight].blank?)
+    @user.days = params[:user][:days] unless (params[:user][:days].nil? or params[:user][:days].blank?)
+    @user.user_type = params[:user][:user_type] unless (params[:user][:user_type].nil? or params[:user][:user_type].blank?)
+    # @user.calculate(uid: session[:user_uid])
     if @user.save
       flash[:notice] = "You have changed your profiles!"
       redirect_to welcome_index_path
