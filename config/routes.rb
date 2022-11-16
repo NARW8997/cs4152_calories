@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   post 'welcome/create'
   # ＵＳＥＲ　ｆｉｒｓｔ　ｔｉｍｅ　ｌｏｇｉｎ　ｐａｇｅ
   get 'welcome/new_index'
-  get 'welcome/restaurant'
+  get 'restaurants/restaurant'
   get 'welcome/exercise'
 
   # login page
