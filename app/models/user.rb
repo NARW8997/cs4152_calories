@@ -12,5 +12,4 @@ class User < ActiveRecord::Base
   # validates :age, presence: { message: "age cannot be blank"}
   # validates :sex, presence: { message: "sex cannot be blank"}
 
-
 end

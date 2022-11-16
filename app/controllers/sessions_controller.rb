@@ -14,10 +14,10 @@ class SessionsController < ApplicationController
       # @user.height = params[:height] unless (params[:height].nil? or params[:height].blank?)
       # @user.age = params[:age] unless (params[:age].nil? or params[:age].blank?)
       # @user.sex = params[:sex] unless (params[:height].nil? or params[:height].blank?)
-      @user.weight = params[:weight] if (@user.weight.nil? or @user.weight.blank?)
-      @user.height = params[:height] if (@user.height.nil? or @user.height.blank?)
-      @user.age = params[:age] if (@user.age.nil? or @user.age.blank?)
-      @user.sex = params[:sex] if (@user.sex.nil? or @user.sex.blank?)
+      # @user.weight = params[:weight] if (@user.weight.nil? or @user.weight.blank?)
+      # @user.height = params[:height] if (@user.height.nil? or @user.height.blank?)
+      # @user.age = params[:age] if (@user.age.nil? or @user.age.blank?)
+      # @user.sex = params[:sex] if (@user.sex.nil? or @user.sex.blank?)
 
       flash[:notice] = "Login successfully!"
       redirect_to welcome_index_path
