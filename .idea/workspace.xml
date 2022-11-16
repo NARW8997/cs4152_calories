@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0274de36-8350-4f68-b9c6-e511f60278f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221030063229_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221030063229_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221103004646_change_data_type_for_sex.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221115225341_add_part_number_to_products.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221116001058_change_data_name_of_type.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221116004624_add_colorie.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221116032138_create_restaurant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20221116032138_create_restaurant.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20221116034452_delete_datetime.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/restaurant.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/restaurant.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +48,8 @@
       <recent name="$PROJECT_DIR$/app/views/welcome" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/controllers" />
       <recent name="$PROJECT_DIR$/app/views/welcome" />
+      <recent name="$PROJECT_DIR$/app/controllers" />
       <recent name="$PROJECT_DIR$/app/views/layouts" />
     </key>
   </component>
