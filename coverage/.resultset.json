@@ -22,6 +22,10 @@
         1,
         0,
         null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/home/codio/workspace/app/controllers/sessions_controller.rb": [
@@ -172,6 +176,7 @@
         1,
         0,
         null,
+        null,
         null
       ],
       "/home/codio/workspace/app/models/user.rb": [
@@ -204,6 +209,6 @@
         null
       ]
     },
-    "timestamp": 1668663856
+    "timestamp": 1668664521
   }
 }
