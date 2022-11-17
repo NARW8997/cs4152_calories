@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
@@ -6,13 +5,4 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/rails_test.iml" filepath="$PROJECT_DIR$/.idea/rails_test.iml" />
     </modules>
   </component>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cs4152_calories.iml" filepath="$PROJECT_DIR$/.idea/cs4152_calories.iml" />
-    </modules>
-  </component>
->>>>>>> 6e5c4b0ef5238928f0201f4da24c68ddecdf4364
 </project>

@@ -12,8 +12,6 @@ class User < ActiveRecord::Base
   # validates :age, presence: { message: "age cannot be blank"}
   # validates :sex, presence: { message: "sex cannot be blank"}
 
-<<<<<<< HEAD
-=======
   def calculate(uid)
     @user = User.find_by(uid)
     # Increase the weight is 1, decrease is 2, maintain is 0.
@@ -26,5 +24,4 @@ class User < ActiveRecord::Base
     end
     @user.save
   end
->>>>>>> 6e5c4b0ef5238928f0201f4da24c68ddecdf4364
 end
