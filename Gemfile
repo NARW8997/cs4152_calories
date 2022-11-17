@@ -20,8 +20,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  # gem 'sqlite3', '1.3.11'
-  gem 'sqlite3', '1.4'
+  gem 'sqlite3', '1.3.11'
+  # gem 'sqlite3', '1.4'
   gem 'byebug'
   gem 'database_cleaner', '1.4.1'
   gem 'capybara', '3.36.0'
