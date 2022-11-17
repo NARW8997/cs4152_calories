@@ -72,6 +72,7 @@ Feature: display users information
     When I press "sign in"
     Then I should be on "existing user main page"
     Then I should see all the information of "InfinityAlpha"
+    Then I should see daily calorie of "InfinityAlpha"
 
   #Sad path
   Scenario: Incorrect password or username 
