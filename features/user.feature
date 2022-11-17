@@ -78,7 +78,8 @@ Feature: display users information
   Scenario: Incorrect password or username 
     Given I am on home page
     And I fill in "username" with "InfinityAlpha10" and "password" with "00000000"
-    Then I should see Username or Password incorrect! flash
+    When I press "sign in"
+    Then I should see "Username or Password incorrect!"
 
 
   Scenario: Update a user
@@ -106,7 +107,6 @@ Feature: display users information
     When I follow "Exercise"
     Then I should be on "exercise page"
     Then I should see information of all exercises
-
 
   Scenario: View meal plans
     Given I am on the main page of "InfinityAlpha"
