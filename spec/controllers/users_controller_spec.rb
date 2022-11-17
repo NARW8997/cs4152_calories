@@ -29,9 +29,9 @@ describe UsersController, type: 'controller' do
 
         describe 'user is created unsuccessfully' do
             it "should render new if username is confirmed password is different from password" do
-                user = User.new(username: "", password: "123456", first_name: "test", last_name: "test",
+                user = User.new(username: "test", password: "123456", first_name: "test", last_name: "test",
                 email: "test@columbia.edu")
-                post :create, :user => {username: "", password: "123456", first_name: "test", last_name: "test",
+                post :create, :user => {username: "test", password: "123456", first_name: "test", last_name: "test",
                 email: "test@columbia.edu"}, :confirmPW => {"confirmPW" => "234567"}
                 expect(response).to render_template("new")
             end

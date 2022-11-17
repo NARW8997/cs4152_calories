@@ -39,7 +39,7 @@ Feature: display users information
     And I press "register"
     Then I should see "Please make sure you confirm password match your password!"
 
-  Scenario: New user login
+  Scenario: New user register
     Given I am on home page
     When I follow "sign up"
     Then I should be on "register page"
@@ -51,7 +51,6 @@ Feature: display users information
     And I fill in "confirmPW" with "1234567"
     And I press "register"
     Then I should be on "User Input page"
-
 
   #Scenario:  New user input
     #Given I am on User Input page
@@ -81,7 +80,6 @@ Feature: display users information
     When I press "sign in"
     Then I should see "Username or Password incorrect!"
 
-
   Scenario: Update a user
     Given I am on the main page of "InfinityAlpha"
     And I follow "Edit"
@@ -107,6 +105,20 @@ Feature: display users information
     When I follow "Logout"
     Then I should see "You have been Logout!"
     Then I should be on "root page"
+
+  #Sad path
+  Scenario: New user register failed
+    Given I am on home page
+    When I follow "sign up"
+    Then I should be on "register page"
+    When I fill in "first_name" with "Hua"
+    And I fill in "last_name" with "Zhang"
+    And I fill in "username" with ""
+    And I fill in "email" with "1253535@gmail.com"
+    And I fill in "password" with "1234567"
+    And I fill in "confirmPW" with "1234567"
+    And I press "register"
+    Then I should see "Register failed!"
 
   Scenario: View all available exercises
     Given I am on the main page of "InfinityAlpha"
