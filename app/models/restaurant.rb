@@ -1,5 +1,6 @@
 class Restaurant < ActiveRecord::Base
-  def index
+  def restaurant
     @restaurants = Restaurant.all
   end
+
 end

@@ -21,7 +21,7 @@ module NavigationHelpers
       when /^root page/ then '/'
       when /^exercise page/ then '/welcome/exercise'
       when /^meal plans page/ then '/meal-plan-delivery'
-      when /^restaurants page/ then '/restaurants/restaurant'
+      when /^restaurants page/ then '/restaurants'
 
       # Add more mappings here.
       # Here is an example that pulls values out of the Regexp:

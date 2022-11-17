@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  # get 'sessions/new'
 
   #　ｕｓｅｒ　ａｌｒｅａｄｙ　ｈａｖｅ　ａ　ａｃｃｏｕｎｔ，　ｔｈｅｎ　ｌｏｇｉｎ
   get 'welcome/index'
   post 'welcome/create'
   # ＵＳＥＲ　ｆｉｒｓｔ　ｔｉｍｅ　ｌｏｇｉｎ　ｐａｇｅ
   get 'welcome/new_index'
-  get 'restaurants/restaurant'
+  # get 'restaurants/restaurant'
   get 'welcome/exercise'
 
   # login page
@@ -15,6 +14,7 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
   resources :users
   resources :sessions
+  resources :restaurants
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
