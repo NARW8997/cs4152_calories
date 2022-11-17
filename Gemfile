@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 ruby '2.6.6'
 gem 'rails', '4.2.11.3'
 
-gem 'sqlite3', '1.3.11'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
@@ -12,7 +11,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'bootstrap', '~> 5.1.3'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+# gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -21,7 +20,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
-  gem 'sqlite3', '1.3.11'
+  # gem 'sqlite3', '1.3.11'
+  gem 'sqlite3', '1.4'
   gem 'byebug'
   gem 'database_cleaner', '1.4.1'
   gem 'capybara', '3.36.0'
@@ -36,9 +36,14 @@ group :test do
   gem 'simplecov', :require => false
   gem 'factory_girl_rails'
 end
+
 # group :production do
 #   gem 'pg'
 # end
+group :production do
+  gem 'pg', '~> 0.21' # for Heroku deployment
+  gem 'rails_12factor'
+end
 
 # Gems used only for assets and not required
 # in production environments by default.

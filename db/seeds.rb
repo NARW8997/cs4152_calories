@@ -15,3 +15,7 @@ Restaurant.create(id: "6", name: "Strokos Gourmet Deli", cal_type: "medium", loc
 Restaurant.create(id: "7", name: "Pret a Manger", cal_type: "low", location: "116th and Broadway 2955, Broadway, New York, NY 10025")
 Restaurant.create(id: "8", name: "sweetgreen", cal_type: "low", location: "2937 Broadway, New York, NY 10025")
 Restaurant.create(id: "9", name: "DIG", cal_type: "low", location: "2884 Broadway, New York, NY 10025")
+User.create(username: 'ryan', password: '222222', first_name: 'ryan', last_name: 'wang',
+            email: 'ryanw@gmail.com', weight: '80', height: '180', age: '23', sex: 'male',
+            goal_weight: '70', days: '100', user_type: '2', daily_calorie: '200')
+
