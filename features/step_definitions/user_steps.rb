@@ -57,6 +57,14 @@ When(/^I follow "([^"]*)"$/) do |link|
   click_link(link)
 end
 
+When(/^I follow "([^"]*)" outside$/) do |link|
+  begin
+    click_link(link)
+  rescue ActionController::RoutingError
+    expect(page.current_url).to eq "https://www.trifectanutrition.com/meal-plan-delivery"
+  end
+end
+
 Then (/^I should be on "([^"]*)"$/) do |page_name|
   current_path = URI.parse(current_url).path
   if current_path.respond_to? :should
@@ -97,7 +105,17 @@ Then(/^I should see all the information of "([^"]*)"$/) do |username|
   step %{I should see "#{user.age}"}
   step %{I should see "#{user.age}"}
 
+
 end
+
+Then(/^I should see daily calorie of "([^"]*)"$/) do |username|
+  user = User.find_by(username: username)
+  id = user.id
+  user.calculate(id)
+  calorie = user.daily_calorie
+  step %{I should see "#{calorie} Calories"}
+end
+
 
 
 Given(/^I am on the main page of "([^"]*)"$/) do |arg|

@@ -16,6 +16,7 @@ class WelcomeController < ApplicationController
   def create
     @user = User.find_by(uid: session[:user_uid])
     @user.weight = params[:user][:weight]
+
     @user.height = params[:user][:height]
     @user.age = params[:user][:age]
     @user.sex = params[:user][:sex]

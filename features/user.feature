@@ -37,7 +37,7 @@ Feature: display users information
     And I fill in "password" with "123456"
     And I fill in "confirmPW" with "123356"
     And I press "register"
-    Then I should see "password does not match error message"
+    Then I should see "Please make sure you confirm password match your password!"
 
   Scenario: New user login
     Given I am on home page
@@ -72,6 +72,7 @@ Feature: display users information
     When I press "sign in"
     Then I should be on "existing user main page"
     Then I should see all the information of "InfinityAlpha"
+    Then I should see daily calorie of "InfinityAlpha"
 
   #Sad path
   Scenario: Incorrect password or username 
@@ -109,5 +110,5 @@ Feature: display users information
 
   Scenario: View meal plans
     Given I am on the main page of "InfinityAlpha"
-    When I follow "Meal Plan"
+    When I follow "Meal Plan" outside
     Then I should be on "meal plans page"

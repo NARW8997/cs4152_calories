@@ -17,16 +17,16 @@
         null,
         null,
         1,
+        1,
+        null,
+        1,
+        0,
+        1,
         0,
         null,
-        0,
-        0,
-        0,
-        0,
+        1,
         null,
-        0,
-        null,
-        0,
+        1,
         null,
         null
       ],
@@ -54,10 +54,10 @@
         null,
         null,
         null,
-        6,
-        6,
-        6,
-        6,
+        null,
+        null,
+        null,
+        null,
         null,
         6,
         6,
@@ -117,6 +117,7 @@
         1,
         0,
         0,
+        null,
         0,
         0,
         0,
@@ -134,14 +135,22 @@
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/codio/workspace/app/controllers/restaurants_controller.rb": [
+=======
+      "/home/codio/workspace/cs4152_calories/app/controllers/restaurants_controller.rb": [
+>>>>>>> 1c1dbfbab0c9de2dd74bc42921fc108974ee08f7
         1,
         1,
         0,
         null,
         null
       ],
+<<<<<<< HEAD
       "/home/codio/workspace/app/controllers/users_controller.rb": [
+=======
+      "/home/codio/workspace/cs4152_calories/app/controllers/users_controller.rb": [
+>>>>>>> 1c1dbfbab0c9de2dd74bc42921fc108974ee08f7
         1,
         null,
         1,
@@ -203,6 +212,10 @@
         null
       ]
     },
+<<<<<<< HEAD
     "timestamp": 1668647361
+=======
+    "timestamp": 1668658699
+>>>>>>> 1c1dbfbab0c9de2dd74bc42921fc108974ee08f7
   }
 }
