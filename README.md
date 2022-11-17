@@ -41,5 +41,6 @@ $ rails s -p {enter running port here}
 https://www.figma.com/file/H93iGaKUFDurojLvozp7LV/4152_iter2?node-id=108%3A341&t=ufmGEYQsKPTw1Y09-1
 
 ## Deployment
-https://vast-harbor-03664.herokuapp.com
+https://radiant-tundra-39608.herokuapp.com/
+use username: ryan, password: 222222 to login or sign up a new account!
 
