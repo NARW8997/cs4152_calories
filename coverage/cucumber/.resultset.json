@@ -1,11 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-<<<<<<< HEAD
       "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/user.rb": [
-=======
-      "/home/codio/workspace/app/models/user.rb": [
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
         1,
         1,
         1,
@@ -31,18 +27,6 @@
         1,
         null,
         1,
-        null,
-        null
-      ],
-<<<<<<< HEAD
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/restaurant.rb": [
-=======
-      "/home/codio/workspace/app/controllers/sessions_controller.rb": [
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
-        1,
-        1,
-        null,
-<<<<<<< HEAD
         null,
         null
       ],
@@ -50,18 +34,15 @@
         1,
         1,
         null,
-        10,
-=======
-        13,
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
+        12,
         null,
         null,
         null,
         null,
         1,
-        9,
-        9,
-        7,
+        8,
+        8,
+        6,
         null,
         null,
         null,
@@ -71,8 +52,8 @@
         null,
         null,
         null,
-        7,
-        7,
+        6,
+        6,
         null,
         2,
         2,
@@ -87,18 +68,13 @@
         null,
         null
       ],
-<<<<<<< HEAD
       "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/application_controller.rb": [
-=======
-      "/home/codio/workspace/app/controllers/application_controller.rb": [
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
         1,
         null,
         null,
         1,
         null
       ],
-<<<<<<< HEAD
       "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/application_helper.rb": [
         1,
         null
@@ -115,26 +91,7 @@
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/welcome_controller.rb": [
-=======
-      "/home/codio/workspace/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/codio/workspace/app/helpers/sessions_helper.rb": [
-        1,
-        null
-      ],
-      "/home/codio/workspace/app/helpers/users_helper.rb": [
-        1,
-        null
-      ],
-      "/home/codio/workspace/app/helpers/welcome_helper.rb": [
-        1,
-        null
-      ],
-      "/home/codio/workspace/app/controllers/users_controller.rb": [
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -151,7 +108,67 @@
         1,
         2,
         1,
-<<<<<<< HEAD
+        1,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        0,
+        0,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/welcome_controller.rb": [
+        1,
+        1,
+        7,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
         0,
         0,
         null,
@@ -173,108 +190,18 @@
         null
       ],
       "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/restaurants_controller.rb": [
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/users_controller.rb": [
-=======
-        1,
-        1,
-        null,
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        null,
-        2,
-        2,
-        2,
-        2,
-        null,
-        0,
-        0,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null
-      ],
-      "/home/codio/workspace/app/controllers/welcome_controller.rb": [
-        1,
-        1,
-        9,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        1,
-        0,
-        0,
-        null,
         0,
         0,
         0,
         0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null
-      ],
-      "/home/codio/workspace/app/controllers/restaurants_controller.rb": [
         0,
         0,
         0,
         0,
         0
       ],
-      "/home/codio/workspace/app/models/restaurant.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/restaurant.rb": [
+        0,
         0,
         0,
         0,
@@ -282,10 +209,6 @@
         0
       ]
     },
-<<<<<<< HEAD
-    "timestamp": 1668663327
-=======
-    "timestamp": 1668662637
->>>>>>> 40c99713fc37067ac55f3fca801224c3e9728119
+    "timestamp": 1668663818
   }
 }
