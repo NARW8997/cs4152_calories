@@ -97,6 +97,15 @@ Then(/^I should see all the information of "([^"]*)"$/) do |username|
   step %{I should see "#{user.age}"}
   step %{I should see "#{user.age}"}
 
+
+end
+
+
+Then(/^I should see daily calorie of "([^"]*)"$/) do |username|
+  user = User.find_by(username: username)
+  uid = user.uid
+  calorie = user.calculate(uid)
+  step %{I should see "#{calorie} Calories"}
 end
 
 
