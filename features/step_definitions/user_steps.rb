@@ -28,11 +28,18 @@ Given /the following users exist/ do |users_table|
   end
 end
 
+Given /the following restaurants exist/ do |restaurants_table|
+  restaurants_table.hashes.each do |restaurant|
+    # each returned element will be a hash whose key is the table header.
+    # you should arrange to add that user to the database here.
+    Restaurant.create(restaurant)
+  end
+end
 Then(/^(\d+) seed users should exist$/) do |n_seeds|
   expect(User.count).to eq n_seeds.to_i
 end
 
-Given(/^I am on home   page$/) do
+Given(/^I am on home page$/) do
   visit root_path
 end
 
@@ -88,6 +95,7 @@ Then(/^I should see all the information of "([^"]*)"$/) do |username|
   step %{I should see "#{user.weight}"}
   step %{I should see "#{user.sex}"}
   step %{I should see "#{user.age}"}
+  step %{I should see "#{user.age}"}
 
 end
 
@@ -110,13 +118,40 @@ Then(/^I should see last_name with "([^"]*)" on the main page of "([^"]*)"$/) do
 end
 
 Then(/^(\d+) seed restaurants should exist$/) do |n_seeds|
-  pending
+  expect(Restaurant.count).to eq n_seeds.to_i
 end
 
-Then(/^I should see information of all restaurants$/) do
-  pending
+
+Then(/^I should not see "([^"]*)"$/) do |text|
+  expect(page).not_to have_content(text)
 end
 
-Then(/^I should not see "([^"]*)"$/) do |arg|
-  pending
+And(/^I select "([^"]*)" with "([^"]*)"$/) do |field, options|
+  select(options, :from => field)
+end
+
+Then(/^I should see information of all exercises$/) do
+  step %{I should see "Weight Lifting: general"}
+  step %{I should see "Aerobics: water"}
+  step %{I should see "Stretching, Hatha Yoga"}
+  step %{I should see "Calisthenics: moderate"}
+  step %{I should see "Stair Step Machine: general"}
+  step %{I should see "Weight Lifting: vigorous"}
+  step %{I should see "Aerobics, Step: low impactr"}
+  step %{I should see "Aerobics: high impact"}
+  step %{I should see "Bicycling, Stationary: moderate"}
+  step %{I should see "Rowing, Stationary: moderate"}
+  step %{I should see "Calisthenics: vigorous"}
+  step %{I should see "Circuit Training: general"}
+  step %{I should see "Rowing, Stationary: vigorous"}
+  step %{I should see "Elliptical Trainer: general"}
+  step %{I should see "Ski Machine: general"}
+end
+
+Given(/^I am on main page$/) do
+  visit welcome_index_path
+end
+
+Given(/^I am on register page$/) do
+  visit new_user_path
 end
