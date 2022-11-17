@@ -44,8 +44,8 @@ class UsersController < ApplicationController
       redirect_to welcome_index_path
       return
     end
-      flash[:notice] = "Update failed!"
-    render action: :edit
+      # flash[:notice] = "Update failed!"
+      # render action: :edit
   end
 
   def destroy

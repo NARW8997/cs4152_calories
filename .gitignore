@@ -6,7 +6,6 @@
 
 # Ignore bundler config.
 /.bundle
-
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
@@ -16,3 +15,9 @@
 !/log/.keep
 /tmp
 /.idea
+/coverage/.last_run.json
+/coverage/.resultset.json
+/coverage/index.html
+/coverage/cucumber/.last_run.json
+/coverage/cucumber/.resultset.json
+/coverage/cucumber/index.html

@@ -32,3 +32,9 @@ Feature: display restaurants information
       |10| Sweetgreen|low|2937 Broadway|
 
     Then 10 seed restaurants should exist
+
+    Scenario: View all nearby restaurants
+      Given I am on the main page of "InfinityAlpha"
+      When I follow "Restaurant"
+      Then I should be on "restaurants page"
+      Then I should not see "high"
