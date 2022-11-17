@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/home/codio/workspace/cs4152_calories/app/models/user.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/user.rb": [
         1,
         1,
         1,
@@ -26,17 +26,18 @@
         null,
         1,
         null,
+        1,
         null,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/models/restaurant.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/restaurant.rb": [
         1,
         1,
         0,
         null,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/controllers/sessions_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -53,10 +54,10 @@
         null,
         null,
         null,
-        6,
-        6,
-        6,
-        6,
+        null,
+        null,
+        null,
+        null,
         null,
         6,
         6,
@@ -74,30 +75,30 @@
         null,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/controllers/application_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/helpers/application_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/helpers/sessions_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/helpers/users_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/helpers/welcome_helper.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/controllers/welcome_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/welcome_controller.rb": [
         1,
         1,
         7,
@@ -116,6 +117,7 @@
         1,
         0,
         0,
+        null,
         0,
         0,
         0,
@@ -133,14 +135,14 @@
         null,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/controllers/restaurants_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/restaurants_controller.rb": [
         1,
         1,
         0,
         null,
         null
       ],
-      "/home/codio/workspace/cs4152_calories/app/controllers/users_controller.rb": [
+      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -202,6 +204,6 @@
         null
       ]
     },
-    "timestamp": 1668652238
+    "timestamp": 1668652989
   }
 }

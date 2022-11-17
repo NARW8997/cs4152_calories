@@ -37,7 +37,7 @@ Feature: display users information
     And I fill in "password" with "123456"
     And I fill in "confirmPW" with "123356"
     And I press "register"
-    Then I should see "password does not match error message"
+    Then I should see "Please make sure you confirm password match your password!"
 
   Scenario: New user login
     Given I am on home page
