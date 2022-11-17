@@ -1,75 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Title</title>
+
 </head>
 <body>
-  <div class="container">
-    <div class="row text-center">
-      <h1>Restaurants recommended based on your needs</h1>
-    </div>
-    <div class="row">
-      <table class="table table-hover col-md-12">
-        <thead>
-        <tr>
-          <th scope="col">Restaurant Name</th>
-          <th scope="col">Location</th>
-          <th scope="col">Food Calories</th>
-        </tr>
-        </thead>
-        <tbody>
-
-    <% @restaurants.each do |restaurant| %>
-          <% if User.find(session[:user_uid]).user_type == "1" %>
-            <% if restaurant.cal_type == "high" || restaurant.cal_type == "medium" %>
-              <tr>
-                <td>
-                  <%= restaurant.name %>
-                </td>
-                <td>
-                  <%= restaurant.location %>
-                </td>
-                <td>
-                  <%= restaurant.cal_type %>
-                </td>
-              </tr>
-            <% end %>
-          <% end %>
-          <% if User.find(session[:user_uid]).user_type == "2" %>
-            <% if restaurant.cal_type == "low" || restaurant.cal_type == "medium" %>
-              <tr>
-                <td>
-                  <%= restaurant.name %>
-                </td>
-                <td>
-                  <%= restaurant.location %>
-                </td>
-                <td>
-                  <%= restaurant.cal_type %>
-                </td>
-              </tr>
-            <% end %>
-          <% end %>
-          <% if User.find(session[:user_uid]).user_type == "3" %>
-            <% if restaurant.cal_type == "low" || restaurant.cal_type == "medium" || restaurant.cal_type == "high" %>
-              <tr>
-                <td>
-                  <%= restaurant.name %>
-                </td>
-                <td>
-                  <%= restaurant.location %>
-                </td>
-                <td>
-                  <%= restaurant.cal_type %>
-                </td>
-              </tr>
-            <% end %>
-          <% end %>
-    <% end %>
-        </tbody>
-      </table>
-    </div>
+<div class="container">
+  <div class="row text-center">
+    <h1>Restaurants recommended based on your needs</h1>
   </div>
+  <div class="row">
+    <table class="table table-hover col-md-12">
+      <thead>
+      <tr>
+        <th scope="col">Restaurant Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Food Calories</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <% @restaurants.each do |restaurant| %>
+        <% if User.find(session[:user_uid]).user_type == "1" %>
+          <% if restaurant.cal_type == "high" || restaurant.cal_type == "medium" %>
+            <tr>
+              <td>
+                <%= restaurant.name %>
+              </td>
+              <td>
+                <%= restaurant.location %>
+              </td>
+              <td>
+                <%= restaurant.cal_type %>
+              </td>
+            </tr>
+          <% end %>
+        <% end %>
+        <% if User.find(session[:user_uid]).user_type == "2" %>
+          <% if restaurant.cal_type == "low" || restaurant.cal_type == "medium" %>
+            <tr>
+              <td>
+                <%= restaurant.name %>
+              </td>
+              <td>
+                <%= restaurant.location %>
+              </td>
+              <td>
+                <%= restaurant.cal_type %>
+              </td>
+            </tr>
+          <% end %>
+        <% end %>
+        <% if User.find(session[:user_uid]).user_type == "3" %>
+          <% if restaurant.cal_type == "low" || restaurant.cal_type == "medium" || restaurant.cal_type == "high" %>
+            <tr>
+              <td>
+                <%= restaurant.name %>
+              </td>
+              <td>
+                <%= restaurant.location %>
+              </td>
+              <td>
+                <%= restaurant.cal_type %>
+              </td>
+            </tr>
+          <% end %>
+        <% end %>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
 </body>
-</html>

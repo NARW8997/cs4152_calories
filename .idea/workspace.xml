@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0274de36-8350-4f68-b9c6-e511f60278f6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/restaurant.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/restaurant.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/exercise.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/exercise.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/cucumber/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/cucumber/.last_run.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/cucumber/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/cucumber/.resultset.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/coverage/cucumber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/cucumber/index.html" afterDir="false" />
