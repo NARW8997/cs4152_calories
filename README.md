@@ -38,7 +38,7 @@ $ bundle exec cucumber
 $ rails s -p {enter running port here}
 ```
 ## Prototype
-https://www.figma.com/file/MG7PduQGmPU3M70djLBcXa/4152?node-id=9%3A83
+https://www.figma.com/file/H93iGaKUFDurojLvozp7LV/4152_iter2?node-id=108%3A341&t=ufmGEYQsKPTw1Y09-1
 
 ## Deployment
 https://vast-harbor-03664.herokuapp.com
