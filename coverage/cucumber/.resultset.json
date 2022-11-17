@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/user.rb": [
+      "/home/codio/workspace/cs4152_calories/app/models/user.rb": [
         1,
         1,
         1,
@@ -30,14 +30,14 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/restaurant.rb": [
+      "/home/codio/workspace/cs4152_calories/app/models/restaurant.rb": [
         1,
         1,
         0,
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/sessions_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -75,30 +75,30 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/application_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/application_controller.rb": [
         1,
         null,
         null,
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/application_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/sessions_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/users_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/welcome_helper.rb": [
+      "/home/codio/workspace/cs4152_calories/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/welcome_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/welcome_controller.rb": [
         1,
         1,
         7,
@@ -135,14 +135,14 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/restaurants_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/restaurants_controller.rb": [
         1,
         1,
         0,
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/users_controller.rb": [
+      "/home/codio/workspace/cs4152_calories/app/controllers/users_controller.rb": [
         1,
         null,
         1,
@@ -204,6 +204,6 @@
         null
       ]
     },
-    "timestamp": 1668654770
+    "timestamp": 1668657676
   }
 }

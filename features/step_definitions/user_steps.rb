@@ -108,13 +108,14 @@ Then(/^I should see all the information of "([^"]*)"$/) do |username|
 
 end
 
-
 Then(/^I should see daily calorie of "([^"]*)"$/) do |username|
   user = User.find_by(username: username)
-  uid = user.uid
-  calorie = user.calculate(uid)
+  id = user.id
+  user.calculate(id)
+  calorie = user.daily_calorie
   step %{I should see "#{calorie} Calories"}
 end
+
 
 
 Given(/^I am on the main page of "([^"]*)"$/) do |arg|
