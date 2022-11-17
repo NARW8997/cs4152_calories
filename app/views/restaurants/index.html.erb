@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
   <div class="container">
@@ -21,7 +20,7 @@
         </thead>
         <tbody>
 
-    <% Restaurant.all.each do |restaurant| %>
+    <% @restaurants.each do |restaurant| %>
           <% if User.find(session[:user_uid]).user_type == "1" %>
             <% if restaurant.cal_type == "high" || restaurant.cal_type == "medium" %>
               <tr>

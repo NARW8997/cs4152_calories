@@ -110,5 +110,5 @@ Feature: display users information
 
   Scenario: View meal plans
     Given I am on the main page of "InfinityAlpha"
-    When I follow "Meal Plan"
+    When I follow "Meal Plan" outside
     Then I should be on "meal plans page"
