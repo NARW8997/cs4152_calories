@@ -102,6 +102,12 @@ Feature: display users information
     When I follow "Delete"
     Then I should be on "root page"
 
+  Scenario: Logout a user
+    Given I am on the main page of "InfinityAlpha"
+    When I follow "Logout"
+    Then I should see "You have been Logout!"
+    Then I should be on "root page"
+
   Scenario: View all available exercises
     Given I am on the main page of "InfinityAlpha"
     When I follow "Exercise"
