@@ -136,7 +136,6 @@
     <%= form_for @user, url: users_path, method: :post do |f| %>
 
       <div style="height: 250px;  border-bottom:2px dashed rgb(215, 216, 217);">
-        <!-- <form action=""> -->
         <div style="float: left; display: inline; margin-top: 20px;">
           <div>
             <span class="input-box">Fist name <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="first name is required" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
@@ -164,7 +163,6 @@
       <div style="height:120px; padding-top: 30px; border-bottom:2px dashed rgb(215, 216, 217);">
         <div style="float: left;">
           <span class="input-box">Password <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="your password should at least 6 chars long" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
-          <!--        <input type="text">-->
           <%= text_field :user, :password, id: "password" %>
         </div>
         <div style="float: right; ">

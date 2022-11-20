@@ -6,8 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rTTiRUKnSWaDu2FjhzWFl8/JuUZMlplyWE/djenb2LoKqkgLGfEGfSrL7XDLoB1M" crossorigin="anonymous">-->
-  <!--  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-Nj1D6pu2WnJojj+67GiU9ZFNwbl7bUWX5Kj5MS22C8bGjllemM9pvQyvj14zJb58" crossorigin="anonymous"></script>-->
   <style>
       * {
           margin: 0;
@@ -155,7 +153,7 @@
       <div class="row">
         <div class="information-aa">
           <div class="row">
-            <p style="font-size:50px; font-weight:800;margin-top: 65px;  ">Hi,<%= User.find(session[:user_uid]).first_name %></p>
+            <p style="font-size:50px; font-weight:800;margin-top: 65px;  ">Hi,<%= current_user.first_name %></p>
           </div>
           <div class="row">
             <div class="col-md-6">
@@ -164,7 +162,7 @@
             </div>
             <div class="col-md-6" style="margin-top: 35px">
                Today, you need <br>
-              <span class="text-danger"><%= User.find(session[:user_uid]).daily_calorie %> Calories</span> <br>
+              <span class="text-danger"><%= current_user.daily_calorie %> Calories</span> <br>
                calorie deficit(-)/calorie surplus(+)
             </div>
           </div>
@@ -174,7 +172,7 @@
         </div>
 
         <div class="weight">
-          <span style="margin: 140px 0 0 290px; font-size:40px;color:white"><%= User.find(session[:user_uid]).weight %> KG</span>
+          <span style="margin: 140px 0 0 290px; font-size:40px;color:white"><%= current_user.weight %> KG</span>
           <div class="pic"></div>
         </div>
       </div>
@@ -183,19 +181,19 @@
         <div class="col">
           <div class="age ww">
             <p>Age</p>
-            <h1><%= User.find(session[:user_uid]).age %></h1>
+            <h1><%= current_user.age %></h1>
           </div>
         </div>
         <div class="col">
           <div class="age ww">
             <p>Sex</p>
-            <h1><%= User.find(session[:user_uid]).sex %></h1>
+            <h1><%= current_user.sex %></h1>
           </div>
         </div>
         <div class="col">
           <div class="age ww">
             <p>Height</p>
-            <h1><%= User.find(session[:user_uid]).height %>CM</h1>
+            <h1><%= current_user.height %>CM</h1>
           </div>
         </div>
       </div>

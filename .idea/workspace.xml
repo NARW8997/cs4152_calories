@@ -3,7 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="0274de36-8350-4f68-b9c6-e511f60278f6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/restaurants_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/restaurants/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/welcome/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/welcome/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.last_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/cucumber/.last_run.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/cucumber/.last_run.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/cucumber/.resultset.json" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/cucumber/.resultset.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/cucumber/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/cucumber/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coverage/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/coverage/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/restaurants_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/restaurants_controller_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,10 +63,11 @@
       <recent name="$PROJECT_DIR$/app/views/welcome" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\wzq17\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\zeqing\rails_test\app\views\restaurants" />
+      <recent name="C:\Users\wzq17\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\zeqing\rails_test\app\views\sessions" />
       <recent name="$PROJECT_DIR$/app/views/restaurants" />
       <recent name="$PROJECT_DIR$/app/views/welcome" />
       <recent name="$PROJECT_DIR$/app/controllers" />
-      <recent name="$PROJECT_DIR$/app/views/layouts" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: cs4152_calories">
@@ -161,7 +180,8 @@
       <updated>1668475078762</updated>
       <workItem from="1668475080330" duration="634000" />
       <workItem from="1668494933268" duration="7278000" />
-      <workItem from="1668722539124" duration="5189000" />
+      <workItem from="1668722539124" duration="5420000" />
+      <workItem from="1668897813060" duration="12153000" />
     </task>
     <servers />
   </component>

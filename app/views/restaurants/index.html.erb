@@ -21,7 +21,7 @@
       <tbody>
 
       <% @restaurants.each do |restaurant| %>
-        <% if User.find(session[:user_uid]).user_type == "1" %>
+        <% if current_user.user_type == "1" %>
           <% if restaurant.cal_type == "high" || restaurant.cal_type == "medium" %>
             <tr>
               <td>
@@ -36,7 +36,7 @@
             </tr>
           <% end %>
         <% end %>
-        <% if User.find(session[:user_uid]).user_type == "2" %>
+        <% if current_user.user_type == "2" %>
           <% if restaurant.cal_type == "low" || restaurant.cal_type == "medium" %>
             <tr>
               <td>
@@ -51,7 +51,7 @@
             </tr>
           <% end %>
         <% end %>
-        <% if User.find(session[:user_uid]).user_type == "3" %>
+        <% if current_user.user_type == "3" %>
           <% if restaurant.cal_type == "low" || restaurant.cal_type == "medium" || restaurant.cal_type == "high" %>
             <tr>
               <td>

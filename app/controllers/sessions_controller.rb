@@ -1,8 +1,6 @@
 class SessionsController < ApplicationController
+  before_filter :logout_user, only: [:new]
   def new
-    # if session[:user_uid]
-    session[:user_uid] = nil
-    # end
   end
 
   # login action, if login successfully, user's uid will be stored in session
@@ -28,8 +26,7 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    session[:user_uid] = nil
-    # session[:user_first_name] = nil
+    logout_user
     flash[:notice] = "You have been Logout!"
     redirect_to root_path
   end
