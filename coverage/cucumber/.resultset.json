@@ -1,7 +1,7 @@
 {
   "Cucumber Features": {
     "coverage": {
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/user.rb": [
+      "/home/codio/workspace/app/models/user.rb": [
         1,
         1,
         1,
@@ -30,11 +30,11 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/models/restaurant.rb": [
+      "/home/codio/workspace/app/models/restaurant.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/sessions_controller.rb": [
+      "/home/codio/workspace/app/controllers/sessions_controller.rb": [
         1,
         1,
         1,
@@ -69,7 +69,7 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/application_controller.rb": [
+      "/home/codio/workspace/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -85,27 +85,27 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/application_helper.rb": [
+      "/home/codio/workspace/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/restaurants_helper.rb": [
+      "/home/codio/workspace/app/helpers/restaurants_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/sessions_helper.rb": [
+      "/home/codio/workspace/app/helpers/sessions_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/users_helper.rb": [
+      "/home/codio/workspace/app/helpers/users_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/helpers/welcome_helper.rb": [
+      "/home/codio/workspace/app/helpers/welcome_helper.rb": [
         1,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/concerns/user_session.rb": [
+      "/home/codio/workspace/app/controllers/concerns/user_session.rb": [
         1,
         null,
         1,
@@ -142,7 +142,7 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/welcome_controller.rb": [
+      "/home/codio/workspace/app/controllers/welcome_controller.rb": [
         1,
         1,
         8,
@@ -174,7 +174,7 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/restaurants_controller.rb": [
+      "/home/codio/workspace/app/controllers/restaurants_controller.rb": [
         1,
         1,
         1,
@@ -196,7 +196,7 @@
         null,
         null
       ],
-      "/mnt/c/Users/wzq17/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/home/zeqing/rails_test/app/controllers/users_controller.rb": [
+      "/home/codio/workspace/app/controllers/users_controller.rb": [
         1,
         1,
         1,
@@ -258,6 +258,6 @@
         null
       ]
     },
-    "timestamp": 1668919067
+    "timestamp": 1668982533
   }
 }
