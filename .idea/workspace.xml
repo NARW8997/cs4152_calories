@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0274de36-8350-4f68-b9c6-e511f60278f6" name="Changes" comment="rewrite restaurants controller, add module for UserSession, replace User.find(xxx) in views">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +177,7 @@
       <workItem from="1668897813060" duration="15573000" />
       <workItem from="1668982940100" duration="3234000" />
       <workItem from="1669948272246" duration="9000" />
-      <workItem from="1670023867642" duration="12308000" />
+      <workItem from="1670023867642" duration="14609000" />
     </task>
     <task id="LOCAL-00001" summary="rewrite restaurants controller, add module for UserSession, replace User.find(xxx) in views">
       <created>1668919283589</created>
