@@ -9,13 +9,24 @@ class WelcomeController < ApplicationController
   end
 
   def create
-    @user = User.find_by(uid: session[:user_uid])
-    @user.weight = params[:user][:weight]
-    @user.height = params[:user][:height]
-    @user.age = params[:user][:age]
+    @user = current_user
+    if params[:user][:user_type] == "Open this select menu"
+      flash[:notice] = "Please choose an option in the bottom drop down window!"
+      render action: :new_index
+      return
+    elsif params[:user][:weight].to_f != 0.0 and params[:user][:height].to_f != 0.0 and params[:user][:age].to_i != 0 and params[:user][:goal_weight].to_f != 0.0 and params[:user][:days].to_i != 0
+      @user.height = params[:user][:height]
+      @user.age = params[:user][:age]
+      @user.weight = params[:user][:weight]
+      @user.goal_weight = params[:user][:goal_weight]
+      @user.days = params[:user][:days]
+    else
+      flash[:notice] = "Please make sure your weight, height, age and days are digit!"
+      render action: :new_index
+      return
+    end
+
     @user.sex = params[:user][:sex]
-    @user.goal_weight = params[:user][:goal_weight]
-    @user.days = params[:user][:days]
     @user.user_type = params[:user][:user_type]
 
     if @user.save
@@ -24,6 +35,7 @@ class WelcomeController < ApplicationController
       render action: :index
       return
     end
+
     flash[:notice] = "Please check your input valid!"
     render action: :new_index
   end

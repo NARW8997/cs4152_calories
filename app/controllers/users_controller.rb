@@ -9,8 +9,14 @@ class UsersController < ApplicationController
     @user = User.new(params.require(:user).permit(:username, :password, :first_name, :last_name,
                                                   :email, :weight, :height, :age, :sex))
 
-    if params[:user][:password] != params[:confirmPW][:confirmPW]
+    if params[:user][:password].length < 6
+      flash[:notice] = "Please make sure your password at least 6 characters long!"
+      render action: :new
+    elsif params[:user][:password] != params[:confirmPW][:confirmPW]
       flash[:notice] = "Please make sure you confirm password match your password!"
+      render action: :new
+    elsif User.exists? :username => params[:user][:username]
+      flash[:notice] = "Username already existed!"
       render action: :new
     elsif @user.save
       flash[:notice] = "Registered successfully!"
