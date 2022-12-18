@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'geocoder'
+
 group :development, :test do
   gem 'sqlite3', '1.3.11'
   # gem 'sqlite3', '1.4'

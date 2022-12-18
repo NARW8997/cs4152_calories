@@ -12,6 +12,10 @@ Rails.application.routes.draw do
   root 'sessions#new'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  get '/increase', to: redirect('https://www.trifectanutrition.com/paleo-meal-delivery'), as: :increase
+  get '/decrease', to: redirect('https://www.trifectanutrition.com/vegetarian-meal-delivery'), as: :decrease
+  get '/maintain', to: redirect('https://www.trifectanutrition.com/clean-eating-meal-delivery'), as: :maintain
+
   resources :users
   resources :sessions, only: [:new, :destroy, :create]
   resources :restaurants

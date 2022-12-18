@@ -44,3 +44,6 @@ https://www.figma.com/file/H93iGaKUFDurojLvozp7LV/4152_iter2?node-id=108%3A341&t
 https://radiant-tundra-39608.herokuapp.com/
 use username: ryan, password: 222222 to login or sign up a new account!
 
+## Video
+https://youtu.be/aAFlROYByLY
+

@@ -120,34 +120,50 @@
         </div>
 
         <div>
-          <span class="input-box">Weight <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your current weight here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <span class="input-box">Weight (Kg)<button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your current weight here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :weight, id:"weight"%>
+        </div>
+
+        <div>
+          <span class="input-box">Days <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your expected days here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <%= text_field :user, :days, id:"days"%>
         </div>
       </div>
 
       <div style=" float: right; display: inline; margin-top: 20px;">
         <div>
           <span class="input-box">Last name <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your last name here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
-<!--          <input type="text" placeholder="xie">-->
           <%= text_field :user, :last_name, id:"last_name"%>
         </div>
 
         <div>
           <span class="input-box">Email <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your email here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
-<!--          <input type="text" placeholder="wx2283@columbia.edu">-->
           <%= text_field :user, :email, id:"email" %>
         </div>
 
         <div>
-          <span class="input-box">Height <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your height here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
-<!--          <input type="text" placeholder="xxx">-->
+          <span class="input-box">Height (cm) <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your height here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
           <%= text_field :user, :height, id:"height" %>
+        </div>
+
+        <div>
+          <span class="input-box">Goal Weight (Kg) <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your goal weight here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></span><br>
+          <%= text_field :user, :goal_weight, id:"goal_weight"%>
+        </div>
+
+        <div style="margin-top: 6px">
+          <div>You want to <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top" title="change your goal type here" style="float:right;"><img src="/assets/wenhao.png" alt="" height="18px" style="float:right;"></button></div>
+          <select class="form-select" name="user[user_type]">
+            <option selected>Open this select menu</option>
+            <option value="1">Increase weight</option>
+            <option value="2">Decrease weight</option>
+            <option value="3">Maintain weight</option>
+          </select>
         </div>
       </div>
     </div>
 
   <div style="height:20px; margin-top: 100px;" >
-<!--    <button>Confirm</button>-->
     <%= f.submit "Update", id: "button" %>
   </div>
   <% end -%>

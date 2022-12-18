@@ -22,7 +22,13 @@
             <%= link_to "Delete", user_path(session[:user_uid]), method: 'delete', :class => 'nav-link text-danger', data: { confirm: 'Are you sure you want to delete your account?'} %>
             <%= link_to "Restaurant", restaurants_path, :class => 'nav-link' %>
             <%= link_to "Exercise", welcome_exercise_path, method: 'get', :class => 'nav-link' %>
-            <%= link_to "Meal Plan", "https://www.trifectanutrition.com/meal-plan-delivery", :class => 'nav-link' %>
+            <% if current_user.user_type == '1' %>
+              <%= link_to "Meal Plan", increase_path, :target => "_blank", :class => 'nav-link' %>
+            <% elsif current_user.user_type == '2' %>
+              <%= link_to "Meal Plan", decrease_path, :target => "_blank", :class => 'nav-link' %>
+            <% else %>
+              <%= link_to "Meal Plan", maintain_path, :target => "_blank", :class => 'nav-link' %>
+            <% end -%>
             <span class="nav-link active float-end" style="margin-left: 580px">
               <t class="">Welcome!</t>
                 <%= link_to "#{current_user.first_name}, Logout", session_path(session[:user_uid]), method: 'delete', :class => 'text-secondary' %>

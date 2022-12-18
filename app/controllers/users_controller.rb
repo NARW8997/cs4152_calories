@@ -9,8 +9,14 @@ class UsersController < ApplicationController
     @user = User.new(params.require(:user).permit(:username, :password, :first_name, :last_name,
                                                   :email, :weight, :height, :age, :sex))
 
-    if params[:user][:password] != params[:confirmPW][:confirmPW]
+    if params[:user][:password].length < 6
+      flash[:notice] = "Please make sure your password at least 6 characters long!"
+      render action: :new
+    elsif params[:user][:password] != params[:confirmPW][:confirmPW]
       flash[:notice] = "Please make sure you confirm password match your password!"
+      render action: :new
+    elsif User.exists? :username => params[:user][:username]
+      flash[:notice] = "Username already existed!"
       render action: :new
     elsif @user.save
       flash[:notice] = "Registered successfully!"
@@ -38,14 +44,12 @@ class UsersController < ApplicationController
     @user.goal_weight = params[:user][:goal_weight] unless (params[:user][:goal_weight].nil? or params[:user][:goal_weight].blank?)
     @user.days = params[:user][:days] unless (params[:user][:days].nil? or params[:user][:days].blank?)
     @user.user_type = params[:user][:user_type] unless (params[:user][:user_type].nil? or params[:user][:user_type].blank?)
-    # @user.calculate(uid: session[:user_uid])
     if @user.save
+      @user.calculate uid: session[:user_uid]
       flash[:notice] = "You have changed your profiles!"
       redirect_to welcome_index_path
       return
     end
-      # flash[:notice] = "Update failed!"
-      # render action: :edit
   end
 
   def destroy
