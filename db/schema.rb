@@ -29,8 +29,12 @@ ActiveRecord::Schema.define(version: 20221116032138) do
     t.decimal  "height"
     t.integer  "age"
     t.string   "sex"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "goal_weight"
+    t.integer  "days"
+    t.string   "user_type"
+    t.string   "daily_calorie"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
 end
