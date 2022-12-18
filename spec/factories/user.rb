@@ -9,5 +9,7 @@ FactoryGirl.define do
         height 180
         age 18
         sex 'test'
+        goal_weight 150
+        days 30
     end
 end

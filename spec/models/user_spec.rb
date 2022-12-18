@@ -42,4 +42,5 @@ describe User, type: 'model' do
                 email: "test@columbia.edu")
         expect(user).to_not be_valid
     end
+
 end

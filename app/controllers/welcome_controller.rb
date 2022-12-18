@@ -3,7 +3,6 @@ class WelcomeController < ApplicationController
     @user = User.find(session[:user_uid])
   end
 
-
   def new_index
     @user = User.find(session[:user_uid])
   end
